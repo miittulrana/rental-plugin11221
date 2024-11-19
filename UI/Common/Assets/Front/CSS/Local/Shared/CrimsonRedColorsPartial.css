@@ -1,0 +1,9 @@
+/**
+ * Colors style sheet (CSS4 VARIABLES)
+ * License: Licensed under the CodeCanyon split license.
+ */
+:root {
+    --fleet-management-primary-color: #DE2E2F; /* Crimson Red */
+    --fleet-management-primary-light-color: #f05858; /* Light Red */
+    --fleet-management-secondary-color: #393536; /* Dark Red */
+}

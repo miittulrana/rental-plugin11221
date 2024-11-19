@@ -1,0 +1,24 @@
+/**
+ * Additional stylesheet code for compatibility with Avada
+ * Theme Name: Avada
+ * Author: Kestutis Matuliauskas
+ * Copyright: 2015, Kestutis Matuliauskas
+ * License: Themeforest Split Licence
+ */
+.single-navigation {
+    display: none;
+}
+/*Single item page - item block*/
+/*NOTE: Extension-Specific CSS !*/
+#wrapper #main div.type-car_rental_item {
+    /*padding-top: 76px;*/
+    padding-top: 19px;
+    margin-bottom: 19px;
+}
+/*Single location page - location block*/
+/*NOTE: Extension-Specific CSS !*/
+#wrapper #main div.type-car_rental_location {
+    /*padding-top: 76px;*/
+    padding-top: 19px;
+    margin-bottom: 19px;
+}

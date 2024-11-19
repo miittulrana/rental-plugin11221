@@ -1,0 +1,62 @@
+<?php
+/**
+ * @package FleetManagement
+ * @author Kestutis Matuliauskas
+ * @copyright Kestutis Matuliauskas
+ * @license See Legal/License.txt for details.
+ */
+namespace FleetManagement\Controllers\Admin\Settings;
+use FleetManagement\Models\Cache\StaticSession;
+use FleetManagement\Models\Configuration\ConfigurationInterface;
+use FleetManagement\Models\Settings\Setting;
+use FleetManagement\Models\Language\LanguageInterface;
+use FleetManagement\Controllers\Admin\AbstractController;
+
+final class ChangeCompanySettingsController extends AbstractController
+{
+    public function __construct(ConfigurationInterface &$paramConf, LanguageInterface &$paramLang)
+    {
+        parent::__construct($paramConf, $paramLang);
+    }
+
+    private function processSave()
+    {
+        $objSetting = new Setting($this->conf, $this->lang, 'conf_company_name');
+        $objSetting->saveText();
+
+        $objSetting = new Setting($this->conf, $this->lang, 'conf_company_street_address');
+        $objSetting->saveText();
+
+        $objSetting = new Setting($this->conf, $this->lang, 'conf_company_city');
+        $objSetting->saveText();
+
+        $objSetting = new Setting($this->conf, $this->lang, 'conf_company_state');
+        $objSetting->saveText();
+
+        $objSetting = new Setting($this->conf, $this->lang, 'conf_company_country');
+        $objSetting->saveText();
+
+        $objSetting = new Setting($this->conf, $this->lang, 'conf_company_zip_code');
+        $objSetting->saveText();
+
+        $objSetting = new Setting($this->conf, $this->lang, 'conf_company_phone');
+        $objSetting->saveText();
+
+        $objSetting = new Setting($this->conf, $this->lang, 'conf_company_email');
+        $objSetting->saveEmail();
+
+        StaticSession::cacheValueArray('admin_okay_message', array($this->lang->getText('LANG_SETTINGS_COMPANY_SETTINGS_UPDATED_TEXT')));
+
+        wp_safe_redirect('admin.php?page='.$this->conf->getExtURL_Prefix().'settings&tab=company-settings');
+        exit;
+    }
+
+    /**
+     * @return void
+     */
+    public function printContent()
+    {
+        // First - process actions
+        if(isset($_POST['update_company_settings'])) { $this->processSave(); }
+    }
+}

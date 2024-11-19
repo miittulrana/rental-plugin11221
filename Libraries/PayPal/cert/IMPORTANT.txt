@@ -1,0 +1,7 @@
+The use of certificate file is taken from: https://developer.paypal.com/docs/classic/ipn/ht-ipn/
+In wamp-like environments that do not come bundled with root authority certificates,
+please download 'cacert.pem' from "http://curl.haxx.se/docs/caextract.html" and set
+the directory path of the certificate as shown below:
+-------------------------------------------------------------------------------------------------
+curl_setopt($ch, CURLOPT_CAINFO, dirname(__FILE__)."/cert/cacert.pem");
+-------------------------------------------------------------------------------------------------

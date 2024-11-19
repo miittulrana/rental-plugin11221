@@ -1,0 +1,1426 @@
+/**
+ * Fleet Management Stylesheet
+ * Author: KestutisIT
+ * Copyright: 2015-2019, KestutisIT
+ * Licensed under the CodeCanyon split license.
+ */
+/*************************************************************************/
+/******************** SPECIFIC WORDPRESS ADMIN STYLES ********************/
+/*************************************************************************/
+/* Because admin footer text and footer version is removed by the plugin, we also remove the white block */
+#wpbody-content {
+    padding-bottom: 0 !important;
+}
+/*************************************************************************/
+/*************************** GLOBAL STYLES *******************************/
+/*************************************************************************/
+.item-model-description-page-not-set {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+.customer-no-order-yet {
+    font-weight: bold;
+}
+.clear {
+    clear: both;
+}
+.failed {
+    color: #FF0000;
+}
+.success {
+    color: #006600;
+}
+.not-important {
+    color: silver;
+}
+.dynamic-requirement {
+    color: transparent;
+    visibility: hidden;
+}
+/*there is no missing '-' bellow, because of dynamic item*/
+.dynamic-requirement.required {
+    color: #DE2E2F;
+    font-weight: bold;
+    visibility: visible;
+}
+.is-required {
+    color: #DE2E2F;
+    font-weight: bold;
+}
+.is-not-required {
+    color: #006400;
+    font-weight: bold;
+}
+.not-translated {
+    font-size: 10px;
+    color: gray;
+    cursor: pointer;
+}
+.special-notes {
+    font-size: 10px;
+    color: purple;
+    font-weight: bold;
+    cursor: pointer;
+}
+.admin-info-message {
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid black;
+    line-height: 31px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    background-color: #424B58;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+
+}
+.admin-wide-message {
+    max-width: 1220px;
+}
+.admin-standard-width-message {
+    max-width: 1089px;
+}
+.admin-error-message {
+    color: red;
+}
+.admin-error-message .buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+.admin-error-message .back-button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+.admin-error-message .back-button:hover {
+    background-color: #c0c0c0;
+}
+.admin-okay-message {
+
+}
+.admin-debug-html {
+
+}
+div.fleet-management-tabbed-admin a {
+    text-decoration: underline;
+}
+div.fleet-management-tabbed-admin a:hover {
+    text-decoration: none;
+}
+div #container-inside,
+.fleet-management-tabbed-admin .order-details {
+    width: 1000px;
+    background: #f0f0f1;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+#container-inside .title,
+.fleet-management-tabbed-admin .order-details .title {
+    font-size:16px;
+    font-weight:bold;
+}
+#container-inside .button-back,
+.fleet-management-tabbed-admin .order-details .button-back {
+    float: right;
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid silver;
+    border-radius: 3px 3px 3px 3px;
+}
+#container-inside .button-back:hover,
+.fleet-management-tabbed-admin .order-details .button-back:hover {
+    background-color: #DEE1E3;
+}
+#container-inside hr,
+.fleet-management-tabbed-admin .order-details hr {
+    margin-top:10px;
+}
+#container-inside .save-button {
+    padding: 0px 10px 2px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #eef8f6;
+    border: 1px solid silver;
+    border-radius: 3px 3px 3px 3px;
+}
+#container-inside .save-button:hover {
+    background-color: #DEE1E3;
+}
+#container-inside .form-input {
+    width: 250px;
+}
+#container-inside .number,
+#container-inside .digits {
+    width: 70px;
+}
+#container-inside .start-date,
+#container-inside .end-date {
+    width: 90px;
+}
+#container-inside .end-date-datepicker,
+#container-inside .start-date-datepicker {
+    width: 16px;
+    height: 16px;
+    cursor:pointer;
+    margin-bottom:-4px;
+    border: 0;
+}
+#container-inside .extra-block-input-table {
+    width: 100%;
+    text-align:left;
+}
+#container-inside .extra-block-result-table {
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    border:#999 solid 1px;
+}
+#container-inside .price-plan-table {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    width:700px;
+}
+#container-inside .price-plan-table .td1 {
+    width: 72px;
+    padding-left:5px;
+    font-weight: bold;
+}
+#container-inside .price-plan-table .td2 {
+    width: 65px;
+    padding-left:17px;
+    font-weight: bold;
+}
+#container-inside #block_name {
+    width: 100%;
+}
+#container-inside .td-center {
+    text-align: center;
+}
+#container-inside .td-bold {
+    font-weight: bold
+}
+#container-inside #extra_name,
+#container-inside #attribute_title,
+#container-inside #class_name{
+    width: 200px;
+}
+#container-inside #extra_sku,
+#container-inside #item_model_name,
+#container-inside #item_model_sku,
+#container-inside #attribute3,
+#container-inside #attribute5,
+#container-inside .price-group{
+    width: 170px;
+}
+#container-inside #option_name {
+    width: 150px;
+}
+#container-inside #class_order,
+#container-inside .payment-method-order {
+    width: 40px;
+}
+#container-inside .location {
+    width: 350px;
+}
+#container-inside .select-locations,
+#container-inside .payment-method-name,
+#container-inside .payment-method-email,
+#container-inside .private-key,
+#container-inside .public-key,
+#container-inside .tax-name {
+    width: 400px;
+}
+#container-inside .select-price-plan,
+#container-inside .location-form-input{
+    width: 300px;
+}
+#container-inside .location-form-td {
+    padding-right: 10px;
+    font-weight: bold;
+}
+.fleet-management-tabbed-admin .order-details .log-table,
+.fleet-management-tabbed-admin .order-details .view-order-table {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    background:#999999;
+    width:840px;
+    border:none;
+}
+.fleet-management-tabbed-admin .order-details .log-table .log-td,
+.fleet-management-tabbed-admin .order-details .view-order-table td {
+    background:#ffffff;
+    text-align:left;
+}
+.fleet-management-tabbed-admin .order-details .view-order-table .table-title {
+    font-weight:bold;
+    font-variant:small-caps;
+    background:#eeeeee;
+}
+.fleet-management-tabbed-admin .order-details .log-table .log-td:first-child {
+    background:#ffffff;
+    width:160px
+}
+.fleet-management-tabbed-admin .order-details .log-table .log-td-long {
+    text-align:left;
+    font-weight:bold;
+    background:#ffffff;
+}
+.fleet-management-tabbed-admin .email-notifications-form .email-dropdown,
+.fleet-management-tabbed-admin .email-notifications-form .email-subject {
+    width: 475px;
+}
+.fleet-management-tabbed-admin .email-notifications-form .email-body {
+    width:950px;
+    height:300px;
+    border: 1px solid #DDD;
+}
+.fleet-management-tabbed-admin .email-notifications-form .td-title {
+    padding-right: 10px;
+    padding-top: 10px;
+    vertical-align: top;
+}
+.fleet-management-tabbed-admin .email-notifications-form .td-second {
+    padding-bottom: 10px;
+}
+.fleet-management-tabbed-admin .email-notifications-form .span-supported-codes {
+    font-family: 'Courier New', Courier, mono;
+    font-size: 10px;
+}
+.fleet-management-tabbed-admin .email-notifications-form .span-supported-codes-title {
+    color:#000000;
+    font-weight: bold
+}
+.fleet-management-tabbed-admin .email-notifications-form .span-supported-codes-green{
+    color:#196601;
+}
+.fleet-management-tabbed-admin .email-notifications-form .span-supported-codes-black{
+    color:#000000;
+}
+.fleet-management-tabbed-admin .email-notifications-form input[type=submit]{
+    cursor: pointer;
+}
+.fleet-management-tabbed-admin .email-information-span {
+    color:black;
+    font-family: 'Courier New', Courier, mono;
+    font-size: 10px;
+}
+.fleet-management-tabbed-admin .email-information-span-green {
+    color:#196601;
+}
+.fleet-management-extras-availability-calendar hr {
+    margin-top:14px;
+}
+div.fleet-management-tabbed-admin .global-settings-form .number {
+    width: 70px;
+}
+div.fleet-management-tabbed-admin .global-settings-form .page-slugs {
+    width: 165px;
+}
+div.fleet-management-tabbed-admin .customer_settings_form table,
+div.fleet-management-tabbed-admin .search_settings_form table {
+    line-height: 2;
+}
+div.fleet-management-tabbed-admin .customer_settings_form table th,
+div.fleet-management-tabbed-admin .search_settings_form table th {
+    width: 100px;
+    text-align: center;
+}
+div.fleet-management-tabbed-admin .customer_settings_form table th:first-child,
+div.fleet-management-tabbed-admin .search_settings_form table th:first-child {
+    width: 350px;
+    text-align: left;
+}
+div.fleet-management-tabbed-admin .customer_settings_form table th:last-child,
+div.fleet-management-tabbed-admin .search_settings_form table th:last-child {
+    width: auto;
+    text-align: left;
+}
+div.fleet-management-tabbed-admin .tracking-codes {
+    font-family: 'Courier New', Courier, mono;
+    font-size: 10px;
+    color:#196601;
+    line-height: 1.4em;
+}
+div.fleet-management-tabbed-admin .status-form .no-update-text {
+    color: green;
+    font-weight: bold
+}
+div.fleet-management-tabbed-admin .status-form .major-update-text {
+    color: red;
+    font-weight: bold
+}
+div.fleet-management-tabbed-admin .status-form .minor-update-text {
+    color: #2da5da;
+    font-weight: bold
+}
+div.fleet-management-tabbed-admin .text-with-padding {
+    padding-bottom: 20px;
+}
+div.fleet-management-tabbed-admin .status-form .input-center {
+    text-align: center;
+}
+/*************************************************************************/
+/**************************** MAIN STYLES ********************************/
+/*************************************************************************/
+div.car-rental-error {
+    margin: 0 0 0 -20px;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-size: cover;
+    -webkit-text-size-adjust: none;
+    background-image: url("../Images/CyanBG.jpg");
+}
+.fleet-management-tabbed-admin {
+    margin: 0 0 0 -20px;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-size: cover;
+    -webkit-text-size-adjust: none;
+    background-image: url("../Images/CyanBG.jpg");
+    min-height: 1407px; /*4K screen ready: 3840x2160*/
+}
+div.fleet-management-tabbed-admin .body {
+    margin: 0 auto;
+    padding: 40px;
+}
+div.fleet-management-tabbed-admin-narrow .body {
+    /*min-width: 1000px;*/
+    max-width: 1000px;
+}
+div.fleet-management-tabbed-admin-medium .body {
+    /*min-width: 1120px;*/
+    max-width: 1120px;
+}
+div.fleet-management-tabbed-admin-wide .body {
+    /*min-width: 1250px;*/
+    max-width: 1250px;
+}
+div.fleet-management-tabbed-admin-wide .body {
+    /*min-width: 1400px;*/
+    max-width: 1400px;
+}
+@media screen and (max-width: 1000px) {
+    div.fleet-management-tabbed-admin .body {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    div.fleet-management-tabbed-admin .body {
+        padding: 10px;
+    }
+}
+
+/***********************************************************************************/
+/************************ ITEM MODELS AVAILABILITY TABLE ***************************/
+/***********************************************************************************/
+.fleet-management-item-models-availability-calendar .availability-table,
+.modern-tabs .fleet-management-item-models-availability-calendar .availability-table {
+    margin-top: 14px;
+    width: 100%;
+    clear: both;
+    clear-after: both;
+    line-height: 1;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.table-labels {
+    font-size: 14px;
+    background: #2DA5DA none;
+    border: 1px solid #313841;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    height: 26px;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.classified-table-labels {
+    font-size: 14px;
+    height: 26px;
+}
+.fleet-management-item-models-availability-calendar .availability-table th.month-label {
+    text-align: left;
+    font-weight: normal;
+    border: 1px solid #313841;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 5px;
+    vertical-align: baseline;
+}
+.fleet-management-item-models-availability-calendar .availability-table th.classified-month-label {
+    text-align: left;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.fleet-management-item-models-availability-calendar .availability-table th.item-model-price {
+    text-align: center;
+    font-weight: normal;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.table-labels th.one-day {
+    text-align: center;
+    font-weight: normal;
+    width: 30px;
+    padding-top: 5px;
+    vertical-align: baseline;
+    border-top: 1px solid #353C46;
+    border-bottom: 1px solid #353C46;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.table-labels th.one-day:last-child {
+    border-right: 1px solid #353C46;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.classified-table-labels th.one-day {
+    text-align: center;
+    font-weight: normal;
+    width: 30px;
+    padding-top: 5px;
+}
+.fleet-management-item-models-availability-calendar .availability-table .item-model-row {
+}
+.fleet-management-item-models-availability-calendar .availability-table .item-model-row:last-child td {
+    border-bottom: 1px solid #353C46;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.class-label {
+    background: #2DA5DA none;
+    border: 1px solid #313841;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    height: 25px;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.class-label td.class-name {
+    padding-left: 10px;
+    padding-top: 6px;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.item-model-row .item-model-description {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #353C46;
+    border-right: 1px solid #353C46;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.item-model-row .item-model-description .item-model-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.item-model-row .item-model-description hr {
+    color: #DE2E2F;
+    /*background-color: #DE2E2F;*/
+    background-color: #313841;
+    border: none;
+    height: 3px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.item-model-row .quantity-left-in-day {
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px; /*special height to get partial availability closer*/
+    border-right: 1px solid #353C46;
+    vertical-align: middle;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.item-model-row .all-taken {
+    color: red;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.item-model-row .has-available {
+    color: #353C46;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.item-model-row .quantity-hover {
+    cursor: pointer;
+}
+.fleet-management-item-models-availability-calendar .availability-table tr.item-model-row .partial-quantity-hover {
+    cursor: pointer;
+    font-size: 11px;
+    text-align: center;
+    color: grey;
+}
+
+.fleet-management-item-models-availability-calendar .availability-table tr td.no-item-models-in-category,
+.fleet-management-item-models-availability-calendar .availability-table tr td.no-items-in-category {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #353C46;
+    border-right: 1px solid #353C46;
+    border-bottom: 1px solid #353C46;
+}
+div.no-item-models-availability-calendars-found {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #353C46;
+}
+/***********************************************************************************/
+/*************************** EXTRAS AVAILABILITY TABLE *****************************/
+/***********************************************************************************/
+.fleet-management-extras-availability-calendar .availability-table,
+.modern-tabs .fleet-management-extras-availability-calendar .availability-table {
+    margin-top: 14px;
+    width: 100%;
+    clear: both;
+    clear-after: both;
+    line-height: 1;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.table-labels {
+    font-size: 14px;
+    background: #2DA5DA none;
+    border: 1px solid #313841;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    height: 26px;
+    text-transform: uppercase;
+}
+.fleet-management-extras-availability-calendar .availability-table th.month-label {
+    text-align: left;
+    font-weight: normal;
+    border: 1px solid #313841;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 5px;
+    vertical-align: baseline;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.table-labels th.one-day {
+    text-align: center;
+    font-weight: normal;
+    width: 30px;
+    padding-top: 5px;
+    vertical-align: baseline;
+    border-top: 1px solid #353C46;
+    border-bottom: 1px solid #353C46;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.table-labels th.one-day:last-child {
+    border-right: 1px solid #353C46;
+}
+.fleet-management-extras-availability-calendar .availability-table .extra-row {
+}
+.fleet-management-extras-availability-calendar .availability-table .extra-row:last-child td {
+    border-bottom: 1px solid #353C46;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.class-label {
+    background: #2DA5DA none;
+    border: 1px solid #313841;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    height: 25px;
+    text-transform: uppercase;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.class-label td.class-name {
+    padding-left: 10px;
+    padding-top: 6px;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .extra-description,
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .extra-details {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #353C46;
+    border-right: 1px solid #353C46;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .extra-description .extra-name,
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .extra-details .extra-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .extra-details hr,
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .extra-description hr {
+    color: #DE2E2F;
+    /*background-color: #DE2E2F;*/
+    background-color: #313841;
+    border: none;
+    height: 3px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .quantity-left-in-day {
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px; /*special height to get partial availability closer*/
+    border-right: 1px solid #353C46;
+    vertical-align: middle;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .all-taken {
+    color: red;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .has-available {
+    color: #353C46;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .quantity-hover {
+    cursor: pointer;
+}
+.fleet-management-extras-availability-calendar .availability-table tr.extra-row .partial-quantity-hover {
+    cursor: pointer;
+    font-size: 11px;
+    text-align: center;
+    color: grey;
+}
+
+.fleet-management-extras-availability-calendar .availability-table tr td.no-extras {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #353C46;
+    border-right: 1px solid #353C46;
+    border-bottom: 1px solid #353C46;
+}
+div.no-extras-availability-calendars-found {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #353C46;
+}
+
+/***********************************************************************************/
+/**************************** ITEM MODELS PRICE TABLE ******************************/
+/***********************************************************************************/
+.fleet-management-item-models-price-table,
+.modern-tabs .fleet-management-item-models-price-table {
+    margin-top: 14px;
+    width: 100%;
+    clear: both;
+    clear-after: both;
+    line-height: 1;
+}
+.fleet-management-item-models-price-table table,
+.modern-tabs .fleet-management-item-models-price-table table {
+    width: 100%;
+}
+.fleet-management-item-models-price-table tr.table-labels {
+    font-size: 14px;
+    background: #2DA5DA none;
+    border: 1px solid #313841;
+    color: white;
+    text-align: left;
+    height: 26px;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-price-table tr.classified-table-labels {
+    font-size: 14px;
+    height: 26px;
+}
+.fleet-management-item-models-price-table th.item-label {
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 5px;
+    vertical-align: baseline;
+}
+.fleet-management-item-models-price-table th.classified-item-label {
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+.fleet-management-item-models-price-table tr.table-labels th.item-model-price-on-duration,
+.fleet-management-item-models-price-table tr.table-labels th.item-model-deposit {
+    text-align: center;
+    font-weight: normal;
+    width: 100px;
+    padding-top: 5px;
+    vertical-align: baseline;
+}
+.fleet-management-item-models-price-table tr.classified-table-labels th.item-model-price-on-duration,
+.fleet-management-item-models-price-table tr.classified-table-labels th.item-model-deposit {
+    text-align: center;
+    width: 100px;
+    padding-top: 5px;
+    font-weight: normal;
+}
+.fleet-management-item-models-price-table .item-model-row {
+}
+.fleet-management-item-models-price-table .item-model-row:last-child {
+    border-bottom: 1px solid #353C46;
+}
+.fleet-management-item-models-price-table tr.class-label {
+    background: #2DA5DA none;
+    border: 1px solid #313841;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    height: 25px;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-price-table tr.class-label td.class-name {
+    padding-left: 10px;
+    padding-top: 6px;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-description {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #353C46;
+    border-right: 1px solid #353C46;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-description .item-model-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-description hr {
+    color: #DE2E2F;
+    /*background-color: #DE2E2F;*/
+    background-color: #313841;
+    border: none;
+    height: 3px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-price-on-duration,
+.fleet-management-item-models-price-table tr.item-model-row .item-model-deposit {
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #353C46;
+    vertical-align: middle;
+}
+.fleet-management-item-models-price-table tr td.no-item-models-in-category {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #353C46;
+    border-right: 1px solid #353C46;
+    border-bottom: 1px solid #353C46;
+}
+
+/***********************************************************************************/
+/****************************** EXTRAS PRICE TABLE *********************************/
+/***********************************************************************************/
+.fleet-management-extras-price-table,
+.modern-tabs .fleet-management-extras-price-table {
+    margin-top: 14px;
+    width: 100%;
+    clear: both;
+    clear-after: both;
+    line-height: 1;
+}
+.fleet-management-extras-price-table table,
+.modern-tabs .fleet-management-extras-price-table table {
+    width: 100%;
+}
+.fleet-management-extras-price-table tr.table-labels {
+    font-size: 14px;
+    background: #2DA5DA none;
+    border: 1px solid #313841;
+    color: #FFF;
+    text-align: left;
+    height: 26px;
+    text-transform: uppercase;
+}
+.fleet-management-extras-price-table th.extra-label {
+    width: 300px;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 10px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.fleet-management-extras-price-table th.extra-price-on-duration,
+.fleet-management-extras-price-table th.extra-deposit {
+    text-align: center;
+    font-weight: normal;
+    width: 100px;
+    vertical-align: middle;
+}
+.fleet-management-extras-price-table .extra-row {
+
+}
+.fleet-management-extras-price-table .extra-row:last-child {
+    border-bottom: 1px solid #353C46;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-details {
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #353C46;
+    border-right: 1px solid #353C46;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-details .extra-name {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-details hr {
+    color: #2DA5DA;
+    background-color: #2DA5DA;
+    border: none;
+    height: 3px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-price-on-duration {
+    font-size: 14px;
+    text-align: center;
+    border-right: 1px solid #353C46;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-price-on-duration span {
+    cursor: pointer;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-deposit {
+    font-size: 14px;
+    text-align: center;
+    border-right: 1px solid #353C46;
+}
+.fleet-management-extras-price-table tr td.no-extras-available {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/***********************************************************************************/
+div.car-rental-prices-admin input[type="submit"].add-new-price-plan {
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+}
+div.car-rental-prices-admin input[type="submit"].add-new-price-plan:hover {
+    color: white;
+    background-color: #2DA5DA;
+}
+div.car-rental-prices-admin input[type="submit"].add-new-price-plan:disabled {
+    color: rgba(51, 51, 51, 0.5);
+    background-color: #ffffff;
+    cursor: default;
+}
+div.car-rental-prices-admin .price-plans-table {
+    padding-top: 20px;
+    width: 100%;
+    line-height: 2;
+    border: 0;
+}
+/***********************************************************************************/
+.car-rental-add-location tr td.label {
+    width: 160px;
+}
+.car-rental-add-location tr td select[name="afterhours_pickup_location_id"],
+.car-rental-add-location tr td select[name="afterhours_return_location_id"] {
+    width: 302px;
+}
+div.car-rental-locations-admin input[type="button"].save-closed-dates {
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+}
+div.car-rental-locations-admin input[type="button"].save-closed-dates:hover {
+    color: white;
+    background-color: #2DA5DA;
+}
+div.car-rental-locations-admin .closed-dates-calendar {
+    margin-top: 30px;
+}
+/***********************************************************************************/
+div.fleet-management-tabbed-admin .order-search-form a,
+div.modern-tabs .order-search-form a,
+div.fleet-management-tabbed-admin .customer-search-form a,
+div.modern-tabs .customer-search-form a,
+div.fleet-management-tabbed-admin .calendar-search-form a,
+div.modern-tabs .calendar-search-form a {
+    text-decoration: none;
+}
+
+div.fleet-management-tabbed-admin h1.search-title,
+div.fleet-management-tabbed-admin h2.search-title {
+    width: 470px;
+    float: left;
+}
+div.fleet-management-tabbed-admin h1.customer-search-title,
+div.fleet-management-tabbed-admin h2.customer-search-title {
+    width: 257px;
+    float: left;
+}
+div.fleet-management-tabbed-admin h1.search-results-title,
+div.fleet-management-tabbed-admin h2.search-results-title {
+    width: 800px;
+    float: left;
+}
+div.fleet-management-tabbed-admin .typography .big-text {
+    font-size: 16px;
+}
+div.fleet-management-tabbed-admin .typography .notes {
+    font-size: 10px;
+}
+div.fleet-management-tabbed-admin .typography table.settings-table tbody tr.field-setting:nth-child(odd) {
+    background-color: white;
+}
+div.fleet-management-tabbed-admin .typography table.settings-table tr th:first-child,
+div.fleet-management-tabbed-admin .typography table.settings-table tr td:first-child {
+    padding-left: 6px;
+}
+div.fleet-management-tabbed-admin .typography table.settings-table tr th,
+div.fleet-management-tabbed-admin .typography table.settings-table tr td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+div.fleet-management-tabbed-admin .typography table.settings-table tbody tr td > input[type="checkbox"] {
+    margin-top: -6px;
+}
+div.fleet-management-tabbed-admin .typography table.settings-table tbody tr td.pseudo {
+    font-family: "Courier New", Courier, monospace;
+    color: navy;
+    text-align: right;
+}
+div.car-rental-settings-admin div.section-header,
+div.car-rental-settings-admin form table.google-settings thead tr th {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+div.car-rental-settings-admin form table.google-settings tbody tr:first-child td {
+    padding-top: 10px;
+}
+div.car-rental-settings-admin form table.google-settings tbody tr:last-child td {
+    padding-bottom: 10px;
+}
+div.car-rental-settings-admin ul.justify,
+div.car-rental-settings-admin ol.justify,
+div.car-rental-settings-admin p.justify {
+    text-align: justify;
+}
+div.car-rental-settings-admin p.top-padded,
+div.car-rental-settings-admin div.top-padded {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+div.car-rental-settings-admin ol.small-description,
+div.car-rental-settings-admin p.small-description {
+    font-size: 11px;
+    line-height: 1.5em;
+    margin-top: 0;
+}
+div.car-rental-settings-admin form table.company-details-table thead tr th {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.car-rental-settings-admin form table tbody tr td > select.visibility-dropdown {
+    width: 250px;
+}
+div.car-rental-settings-admin form table tbody tr td > select.requirement-dropdown {
+    width: 140px;
+}
+div.fleet-management-tabbed-admin .typography .big-labels select {
+    height: 44px;
+    margin-top: -5px;
+    width: 400px;
+    padding: 4px 8px 4px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #ECECEC;
+}
+.fleet-management-tabbed-admin .typography p.padded {
+    padding-bottom: 20px;
+}
+div.fleet-management-tabbed-admin .col-date-field,
+div.fleet-management-tabbed-admin .customer-search-fields {
+    font-size: 16px;
+    float: left;
+    text-align: right;
+    margin-top: 3px;
+}
+div.fleet-management-tabbed-admin .col-date-field input[type="text"],
+div.fleet-management-tabbed-admin .customer-search-fields input[type="text"] {
+    width: 110px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+div.fleet-management-tabbed-admin .col-date-field select,
+div.fleet-management-tabbed-admin .customer-search-fields select {
+    height: 43px;
+    margin-top: -4px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #ECECEC;
+}
+div.fleet-management-tabbed-admin .col-date-field select {
+    width: 180px;
+}
+div.fleet-management-tabbed-admin .customer-search-fields select {
+    width: 144px;
+}
+div.car-rental-settings-admin input[type="text"] {
+    width: 340px;
+    padding: 8px;
+    font-size: 14px;
+    height: 38px;
+    font-weight: normal;
+}
+div.car-rental-settings-admin textarea {
+    padding: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: white;
+    width: 340px;
+}
+div.car-rental-settings-admin select {
+    height: 38px;
+    width: 340px;
+    padding: 8px;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: white;
+    border: 1px solid #ECECEC;
+}
+div.car-rental-settings-admin select.on-the-right-narrow-input-box {
+    width: 267px;
+    position: relative;
+    top: -2px;
+}
+div.fleet-management-tabbed-admin .col-search {
+    text-align: right;
+    float: right;
+    margin-top: 3px;
+}
+div.fleet-management-tabbed-admin .col-search input[type="submit"],
+div.fleet-management-tabbed-admin .col-search input[type="button"],
+div.car-rental-settings-admin input[type="submit"],
+div.car-rental-settings-admin input[type="button"],
+div.car-rental-status-admin input[type="submit"],
+div.car-rental-status-admin input[type="button"],
+div.car-rental-demos-admin input[type="submit"],
+div.car-rental-demos-admin input[type="button"] {
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+}
+div.fleet-management-tabbed-admin .col-search input[type="submit"]:hover,
+div.fleet-management-tabbed-admin .col-search input[type="button"]:hover,
+div.car-rental-settings-admin input[type="submit"]:hover,
+div.car-rental-settings-admin input[type="button"]:hover,
+div.car-rental-status-admin input[type="submit"]:hover,
+div.car-rental-status-admin input[type="button"]:hover,
+div.car-rental-demos-admin input[type="submit"]:hover,
+div.car-rental-demos-admin input[type="button"]:hover {
+    color: white;
+    background-color: #2DA5DA;
+}
+div.fleet-management-tabbed-admin .col-search input[type="submit"]:disabled,
+div.fleet-management-tabbed-admin .col-search input[type="button"]:disabled,
+div.car-rental-settings-admin input[type="submit"]:disabled,
+div.car-rental-settings-admin input[type="button"]:disabled {
+    color: rgba(51, 51, 51, 0.5);
+    background-color: #fff;
+    cursor: default;
+}
+div.fleet-management-tabbed-admin .col-search input[type="submit"].medium-button,
+div.fleet-management-tabbed-admin .col-search input[type="button"].medium-button {
+    min-width: 80px;
+}
+div.fleet-management-tabbed-admin .col-search input[type="submit"].wide-button,
+div.fleet-management-tabbed-admin .col-search input[type="button"].wide-button {
+    min-width: 110px;
+}
+div.fleet-management-tabbed-admin img.date-selector-image {
+    height: 30px;
+    width: 30px;
+    margin-bottom: -9px;
+    border: 0;
+    margin-left: 8px;
+    cursor: pointer;
+}
+/**************************************/
+.order-search-form .col-date-field {
+    width: 570px;
+}
+.order-search-form .col-search {
+    width: 150px;
+}
+
+.customer-search-form .customer-search-fields {
+    width: 850px;
+}
+.customer-search-form .col-search {
+    width: 234px;
+}
+
+.calendar-search-form .col-date-field {
+    width: 510px;
+}
+.calendar-search-form .col-search {
+    width: 220px;
+}
+
+.customer-search-results .col-search {
+    width: 340px;
+}
+.calendar-search-results .col-search {
+    width: 340px;
+}
+.order-search-form .col-search input[type="submit"] {
+    width: 120px;
+}
+.customer-search-form .col-search input[type="submit"] {
+    width: 120px;
+}
+.calendar-search-form .col-search input[type="submit"] {
+    width: 180px;
+}
+.customer-search-results .col-search input[type="button"] {
+    width: 320px;
+}
+.calendar-search-results .col-search input[type="button"] {
+    width: 320px;
+}
+
+/**************************************/
+div.no-calendars-found {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #353C46;
+}
+div.fleet-management-item-models-availability-calendar,
+div.fleet-management-extras-availability-calendar {
+    margin-bottom: 14px;
+    clear: both;
+    padding-top: 14px;
+}
+div.fleet-management-item-models-availability-calendar:last-child,
+div.fleet-management-extras-availability-calendar:last-child {
+    margin-bottom: 0;
+}
+div.calendar-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/************************ MANUAL ************************/
+.car-rental-manuals-admin div.typography ul
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.car-rental-manuals-admin div.typography pre
+{
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+/************************ OTHER ************************/
+div.fleet-management-tabbed-admin input[type="button"].add-new,
+div.fleet-management-tabbed-admin input[type="button"].back-to {
+    float: right;
+    height: 34px;
+    margin-top: 8px;
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid silver;
+    border-radius: 3px 3px 3px 3px;
+}
+div.fleet-management-tabbed-admin input[type="button"].tall-back-to {
+    float: right;
+    height: 45px;
+    margin-top: 2px;
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid silver;
+    border-radius: 3px 3px 3px 3px;
+    font-weight: bold;
+}
+div.fleet-management-tabbed-admin input.preview[type="button"] {
+    float: none;
+    height: 36px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid silver;
+    border-radius: 3px 3px 3px 3px;
+    vertical-align: middle;
+}
+div.fleet-management-tabbed-admin input[type="button"].add-new:hover,
+div.fleet-management-tabbed-admin input[type="button"].back-to:hover,
+div.fleet-management-tabbed-admin input[type="button"].tall-back-to:hover {
+    background-color: #DEE1E3;
+}
+div.fleet-management-tabbed-admin input[type="button"].preview:hover {
+    color: white;
+    background-color: #2DA5DA;
+}
+.fleet-management-tabbed-admin .typography .ui-datepicker-header,
+.fleet-management-tabbed-admin .typography .ui-widget-header {
+    background: #2DA5DA none;
+    padding: 8px 10px 8px 7px;
+}
+.fleet-management-tabbed-admin .typography .ui-state-active,
+.fleet-management-tabbed-admin .typography .ui-widget-content .ui-state-active,
+.fleet-management-tabbed-admin .typography .ui-widget-header .ui-state-active {
+    background: #2DA5DA none;
+    color: white;
+}
+/* Hide the ^ v icons in table column labels */
+div.fleet-management-tabbed-admin .ui-state-default .ui-icon {
+    background: none;
+    display: none;
+}
+div.fleet-management-tabbed-admin .dataTables_wrapper table.dataTable thead .sorting,
+div.fleet-management-tabbed-admin .dataTables_wrapper table.dataTable thead .sorting_asc,
+div.fleet-management-tabbed-admin .dataTables_wrapper table.dataTable thead .sorting_desc {
+    background: none;
+    white-space: nowrap;
+}
+div.fleet-management-tabbed-admin .dataTables_wrapper .ui-toolbar .dataTables_length,
+div.fleet-management-tabbed-admin .dataTables_wrapper .ui-toolbar .dataTables_filter {
+    color: white;
+    font-weight: normal;
+}
+/*Remove big padding in thead and content*/
+div.fleet-management-tabbed-admin .dataTables_wrapper table.dataTable thead th {
+    padding: 6px 6px;
+}
+div.fleet-management-tabbed-admin .dataTables_wrapper table.dataTable tbody td {
+    padding: 6px 6px;
+}
+div.fleet-management-tabbed-admin .dataTables_wrapper .ui-toolbar select {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px 3px 3px 3px;
+}
+div.fleet-management-tabbed-admin .dataTables_wrapper .dataTables_filter input {
+    height: 28px;
+    border: 1px solid white;
+    border-radius: 3px 3px 3px 3px;
+}
+/*div.fleet-management-tabbed-admin div.DataTables_sort_wrapper {
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+    text-align: center;
+}*/
+
+/*Remove responsive icon coming from AdminTabs*/
+div.fleet-management-tabbed-admin .modern-tabs .typography .dataTables_wrapper ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+div.fleet-management-tabbed-admin th.ui-state-default:last-child div.DataTables_sort_wrapper {
+    text-align: right;
+}
+div.fleet-management-tabbed-admin .dataTables_wrapper td {
+    color: black;
+}
+/*Nice datatables info color*/
+div.fleet-management-tabbed-admin .dataTables_wrapper .dataTables_info {
+    color: white;
+}
+
+div.fleet-management-tabbed-admin .dataTables_wrapper .ui-toolbar .ui-buttonset a.ui-button {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+div.fleet-management-tabbed-admin .dataTables_wrapper .ui-toolbar .ui-buttonset a.ui-button.ui-state-disabled {
+    color: #888888;
+}
+div.fleet-management-tabbed-admin div.modern-tabs .typography h1 {
+    margin-bottom: 20px;
+}
+
+table.price-plans-table tr.price-plan-heading {
+    background: #2DA5DA none;
+}
+table.price-plans-table tr.odd {
+    background: #FFF none;
+}
+table.price-plans-table tr.even {
+    /*nothing is here*/
+}
+table.price-plans-table tr td.price-plan-big-label {
+    font-size: 18px;
+    padding-left: 5px;
+    color: white;
+    text-align: left;
+}
+table.price-plans-table tr td.price-plan-description {
+    text-align: left;
+    width: 85px;
+    color: black;
+    padding-left: 5px;
+}
+table.price-plans-table tr td.price-plan-label {
+    text-align: left;
+    width: 70px;
+    color: black;
+    padding-left: 5px;
+}
+span.price-plan-link {
+    color: black;
+    font-weight: bold;
+}
+td.price-plan-links {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+div.payment-settings select {
+    width: 120px;
+}
+input[name="save_item_model"], input[name="save_location"]  {
+    margin-bottom: 20px;
+}

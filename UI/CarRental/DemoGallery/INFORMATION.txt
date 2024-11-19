@@ -1,0 +1,10 @@
+What is the purpose of /DemoGallery/ folder?
+The main purpose of this folder should be a list images that you will use in your plugin demos.
+These images either could be copied to wp-content/uploads/ folder by your plugin script on demo import,
+or just linked from here.
+
+There is two main benefits of having demo images linked from local folder, instead of remote source:
+1. These image will still be here even after 10 years, so you don't need to depend of any 3rd party site availability,
+it's changes / file-renames, or it's existence at all.
+2. If you are the plugin demo provider, you will save your site traffic,
+as the demo images won't be hot-linked to your site.

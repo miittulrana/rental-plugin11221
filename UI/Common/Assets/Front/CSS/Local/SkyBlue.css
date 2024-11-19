@@ -1,0 +1,12 @@
+/**
+ * Fleet Management Stylesheet
+ * Style Name: Sky Blue
+ * Author: KestutisIT
+ * Copyright: 2015-2019, KestutisIT
+ * License: Licensed under the CodeCanyon split license.
+ */
+/* #1. First - Load the style colors (variables) */
+@import url("Shared/SkyBlueColorsPartial.css");
+
+/* #2. Then - Load the layout */
+@import url("Shared/LayoutPartial.css");

@@ -1,0 +1,3131 @@
+/**
+ * A stylesheet with styles that are common to all plugin styling variations
+ * Author: KestutisIT
+ * Copyright: 2015-2019, KestutisIT
+ * License: Licensed under the CodeCanyon split license.
+ */
+/*************************************************************************/
+/*************************** GLOBAL STYLES *******************************/
+/*************************************************************************/
+/*
+IE11 arrow removal for select
+*/
+.fleet-management-wrapper input:focus, .fleet-management-wrapper select:focus {
+    outline:none;
+}
+.customer-details-form textarea {
+    color: #666;
+    border-radius: 0px;
+    line-height: 1.2;
+    border: 1px solid #b6b6b6;
+    font-size: 14px;
+    background: #fff;
+    -webkit-appearance: none;
+    cursor: pointer;
+    resize: none;
+}
+.fleet-management-wrapper .search-field {
+    max-width: 325px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 5px 0px 5px;
+}
+.fleet-management-search-step1 .search-field:nth-child(3) {
+    max-width: 182px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 5px 0px 5px;
+}
+.fleet-management-search-step1 .search-field:last-child {
+    max-width: 140px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 5px 0px 5px;
+}
+.customer-details-form button[type="submit"] {
+    text-transform: uppercase;
+    color: #666;
+    border-radius: 0px;
+    line-height: 1.2;
+    border: 1px solid #b6b6b6;
+    padding: 0px 10px 0px 10px;
+    height: 40px;
+    font-size: 14px;
+    background: #fff;
+    -webkit-appearance: none;
+    cursor:pointer;
+}
+.fleet-management-wrapper input[type="text"], .fleet-management-wrapper input[type="submit"], .fleet-management-wrapper select {
+    color: #343434;
+    border-radius: 0px;
+    line-height: 1.2;
+    border: 1px solid #b6b6b6;
+    padding: 0px 10px 0px 10px;
+    height: 40px;
+    font-size: 16px;
+    background: #fff;
+    -webkit-appearance: none;
+    cursor:pointer;
+    height: 50px;
+}
+.fleet-management-search-step1 input[type="submit"],
+.fleet-management-order-code-input-form input[type="text"],
+.fleet-management-order-code-input-form input[type="submit"] {
+    width: 100%;
+}
+.fleet-management-wrapper select {
+    padding: 0px 35px 0px 10px;
+    width: 100%;
+    background: url(../../../Images/IconAwesomeAngleDown.svg);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.fleet-management-wrapper .wide-dropdown {
+    max-width: 100%;
+    width: 325px;
+    margin-left: 0;
+    margin-bottom: 7px;
+    margin-right: 0;
+    display: inline-block;
+}
+.fleet-management-wrapper .narrow-dropdown {
+    max-width: 100%;
+    width: 130px;
+    margin-left: 8px;
+    margin-bottom: 6px;
+    margin-right: 0;
+    display: inline-block;
+}
+.fleet-management-wrapper .inline-div {
+    max-width: 100%;
+    margin-bottom: 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+.fleet-management-wrapper input.hasDatepicker {
+    background-size: 21px;
+    max-width: 100%;
+    width: 182px;
+    margin-right: 0;
+    cursor: pointer;
+    background: url(../../../Images/Calendar.svg);
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.fleet-management-wrapper .top-padded {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.fleet-management-wrapper .top-padded-submit {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+}
+.fleet-management-search-step1 input[type="submit"] {
+    color: #fff;
+    background-color: var(--fleet-management-primary-color);
+    text-transform: uppercase;
+    border: 0px;
+    transition: all 0.3s ease;
+    height: 103px;
+}
+.fleet-management-wrapper .change-order-form input[type="submit"] {
+    color: #fff;
+    background-color: var(--fleet-management-primary-color);
+    text-transform: uppercase;
+    border: 0px;
+    transition: all 0.3s ease;
+    height: 50px;
+}
+.fleet-management-location-input-search-form input[type="submit"] {
+    color: #fff;
+    background-color: var(--fleet-management-primary-color);
+    text-transform: uppercase;
+    border: 0px;
+    transition: all 0.3s ease;
+    height: 103px;
+}
+.fleet-management-wrapper input[type="submit"]:hover {
+    color: #fff; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-secondary-color);
+}
+.fleet-management-wrapper select::-ms-expand {
+    display: none;
+}
+#ui-datepicker-div {
+    z-index: 9999 !important;
+}
+.fleet-management-wrapper label.error {
+    display: inline-block;
+    font-size: 12px;
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    padding-left: 10px;
+}
+.fleet-management-wrapper {
+    line-height: 1.56em; /*equal to 25px for default font size of 16px*/
+}
+.fleet-management-wrapper .dynamic-requirement {
+    color: transparent;
+    visibility: hidden;
+}
+/* this is a dynamic item */
+.fleet-management-wrapper .dynamic-requirement.required {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    font-weight: bold;
+    visibility: visible;
+}
+.fleet-management-wrapper .is-required {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    font-weight: bold;
+}
+.fleet-management-wrapper .is-not-required {
+    color: #006400;
+    font-weight: bold;
+}
+.fleet-management-wrapper .highlight {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+}
+.fleet-management-wrapper h2.top-padded {
+     margin-top: 60px;
+}
+.fleet-management-wrapper ul.feature-list {
+    margin: 0;
+    float: left;
+    padding-left: 0;
+}
+.fleet-management-wrapper ul.feature-list li {
+    list-style: none;
+    border-bottom: 1px solid #afafaf;
+    float: left;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size:14px;
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .fleet-management-wrapper .feature-list li {
+        float: none;
+        width: 100%;
+    }
+}
+.fleet-management-wrapper ul.feature-list li::before {
+    content: "";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: inherit;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+    color: #54770f;
+    margin-right:3px
+}
+.fleet-management-wrapper .action-buttons input,
+.fleet-management-wrapper .action-buttons button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    margin-bottom:4px;
+    padding-bottom: 5px;
+    min-width: 130px;
+    height: 36px;
+    font-size: 14px;
+    color: white;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: 0;
+    cursor: pointer;
+}
+.fleet-management-wrapper .action-buttons input:hover,
+.fleet-management-wrapper .action-buttons button:hover {
+    background-color: #9F0001;
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-wrapper .action-buttons input
+    {
+        width: 100%;
+    }
+}
+.fleet-management-wrapper .search-field-body input[type="text"], .pickup-location, .return-location, .pickup-time, .return-time{
+    padding: 0px 10px 0px 40px !important;
+}
+.fleet-management-wrapper .select-icon {
+    position:absolute;
+    padding: 13px 0px 0px 10px;
+}
+.fleet-management-wrapper .title-icon {
+    position:absolute;
+    padding: 3px;
+}
+.fleet-management-wrapper .search-field-title p {
+    padding-left:30px;
+}
+@media only screen and (max-width: 600px) {
+    .fleet-management-wrapper .title-icon {
+        position:absolute;
+        padding: 0;
+    }
+    .fleet-management-wrapper .select-icon {
+        position:absolute;
+        padding: 18px 0px 0px 10px;
+    }
+}
+.fleet-management-wrapper .icon-pickup:before {
+    content: url(../../../Images/ArrowRight.svg);
+}
+.fleet-management-wrapper .icon-return:before {
+    content: url(../../../Images/ArrowLeft.svg);
+}
+.fleet-management-wrapper .icon-location:before {
+    content: url(../../../Images/Pin.svg);
+}
+.fleet-management-wrapper .icon-other:before {
+    content: url(../../../Images/Other.svg);
+}
+.fleet-management-wrapper .icon-clock:before {
+    content: url(../../../Images/ClockCircularOutline.svg);
+}
+/***********************************************************************************/
+/******************************* ITEM MODELS SLIDER ********************************/
+/***********************************************************************************/
+.fleet-management-item-models-slider {
+    min-height: 253px;  /* Used to avoid slow JS page moving while slider will load */
+}
+.fleet-management-item-models-slider .responsive-item-models-slider .slick-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider div.item-model-image {
+    max-width: 100%;
+    width: 240px;
+    height: 150px;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider div.item-model-image img {
+    max-width: 100%;
+    border-radius: 12px 12px 12px 12px;
+    width: 240px;
+    height: 150px;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider div.item-model-details {
+    max-width: 100%;
+    width: 240px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+}
+@media screen and (max-width: 420px) {
+    /* Lets make space for dots to appear bellow the item model slider */
+    .fleet-management-item-models-slider .responsive-item-models-slider div.item-model-details {
+        margin-bottom: 28px;
+    }
+}
+.fleet-management-item-models-slider .responsive-item-models-slider div.item-model-title {
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 22px;
+    overflow: hidden;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider div.item-model-title-with-partner {
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 22px;
+    line-height: 13px;
+    overflow: hidden;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider div.slider-partner-title {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 13px;
+    line-height: 10px;
+    overflow: hidden;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider div.item-model-price {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    min-width: 68px;
+    height: 62px;
+    font-size: 45px;
+    padding-top: 19px;
+    color: white;
+    font-weight: bold;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    padding-left: 14px;
+    padding-right: 14px;
+    line-height: 0.5;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider div.item-model-prefix,
+.fleet-management-item-models-slider .responsive-item-models-slider div.item-model-suffix {
+    text-transform: uppercase;
+    display: inline-block;
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    font-size: 18px;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 18px;
+    height: 62px;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider button.slider-prev-icon,
+.fleet-management-item-models-slider .responsive-item-models-slider button.slider-next-icon {
+    position: absolute;
+    top: 50%;
+    padding: 0 10px;
+    height: 24px;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    z-index: 100;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider button.slider-prev-icon {
+    background-image: url("../../../Images/SliderArrowLeft.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    left: -20px;
+}
+.fleet-management-item-models-slider .responsive-item-models-slider button.slider-next-icon {
+    background-image: url("../../../Images/SliderArrowRight.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    right: -20px;
+}
+@media screen and (max-width: 920px) {
+    .fleet-management-item-models-slider .responsive-item-models-slider button.slider-next-icon {
+        right: 0;
+    }
+    .fleet-management-item-models-slider .responsive-item-models-slider button.slider-prev-icon {
+        left: 0px;
+    }
+}
+/* Hide the arrow if there is no items on the left/right */
+.fleet-management-item-models-slider .responsive-item-models-slider button.slider-prev-icon.slick-disabled,
+.fleet-management-item-models-slider .responsive-item-models-slider button.slider-next-icon.slick-disabled {
+    visibility: hidden;
+}
+.fleet-management-item-models-slider .no-item-models-available {
+    text-align: center;
+}
+.fleet-management-item-models-slider .slick-dots {
+    position: relative;
+}
+/***********************************************************************************/
+/**************************** MANUFACTURERS SLIDER *********************************/
+/***********************************************************************************/
+.fleet-management-manufacturers-slider {
+    min-height: 179px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider div.slick-slide {
+    text-align: center;
+}
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider div.manufacturer-logo {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider div.manufacturer-logo img {
+    border-radius: 12px 12px 12px 12px;
+    height: 179px;
+    width: 179px;
+}
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider div.manufacturer-title {
+    position: absolute;
+    width: 179px;
+    height: 179px;
+    margin-left: 10px;
+    margin-right: 10px;
+    top: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider button.slider-prev-icon,
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider button.slider-next-icon {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider button.slider-prev-icon {
+    background-image: url("../../../Images/SliderArrowLeft.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    left: -25px;
+    width: 14px;
+    height: 24px;
+}
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider button.slider-next-icon {
+    background-image: url("../../../Images/SliderArrowRight.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    right: -25px;
+    width: 14px;
+    height: 24px;
+}
+/* Hide the arrow if there is no items on the left/right */
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider button.slider-prev-icon.slick-disabled,
+.fleet-management-manufacturers-slider .responsive-manufacturers-slider button.slider-next-icon.slick-disabled {
+    visibility: hidden;
+}
+.fleet-management-manufacturers-slider .no-manufacturers-available {
+    text-align: center;
+}
+/***********************************************************************************/
+/****************************** MANUFACTURERS GRID *********************************/
+/***********************************************************************************/
+.fleet-management-manufacturers-grid,
+.fleet-management-manufacturers-grid {
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+.fleet-management-wrapper.fleet-management-manufacturers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fleet-management-manufacturers-grid div.manufacturer-box,
+.fleet-management-manufacturers-grid div.manufacturer-box {
+    display: inline-block;
+    margin-left: 11px;
+    margin-right: 11px;
+    height: 179px;
+    margin-bottom: 6px;
+}
+.fleet-management-manufacturers-grid div.manufacturer-box img {
+    border-radius: 12px 12px 12px 12px;
+    width: 179px;
+    height: 179px;
+}
+.fleet-management-manufacturers-grid div.manufacturer-box div.manufacturer-title {
+    display: block;
+    position: relative;
+    width: 179px;
+    top: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.fleet-management-manufacturers-grid .no-manufacturers-available {
+    text-align: center;
+}
+/******************************************************************/
+/******************* ITEM SEARCH STEP 1 PAGE **********************/
+/******************************************************************/
+/*remove if padding is passed*/
+.fleet-management-search-step1 {
+    text-align: center;
+    padding: 15px 0px;
+}
+.fleet-management-search-step1 input[name="coupon_code"]{
+    width: 100%;
+}
+.fleet-management-wrapper .search-field-title {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #343434;
+}
+.fleet-management-search-step1 .search-field .search-field-body {
+    text-align: left;
+}
+.fleet-management-search-step1 .search-field .search-field-body div.location-title {
+    text-align: left;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    margin-bottom: 14px;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 4px 4px 4px 4px;
+}
+.fleet-management-search-step1 img.date-selector-image {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+.fleet-management-search-step1 .search-field .search-field-body div.top-padded-cancel {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+.fleet-management-search-step1 .search-field .search-field-body img[name="datepicker"] {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+@media (max-width: 425px) {
+    .fleet-management-wrapper .inline-div {
+        width: 100%;
+    }
+    .fleet-management-wrapper input.hasDatepicker {
+        width: 100%;
+    }
+    .fleet-management-wrapper .narrow-dropdown {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 768px) {
+    .fleet-management-search-step1 .search-field .search-field-body {
+        text-align: center;
+    }
+    .fleet-management-search-step1 .search-field .search-field-body input.order-code {
+        /*width: 265px;*/
+        width: 230px;
+    }
+}
+/******************************************************************/
+/************************* CHANGE ORDER PAGE **********************/
+/******************************************************************/
+/*remove if padding is passed*/
+.fleet-management-order-code-input-form {
+    text-align: center;
+    padding: 15px;
+}
+/* Not used */
+.fleet-management-order-code-input-form-bg {
+    background-image: url("../../../Images/SearchBackground.png");
+    background-repeat: repeat;
+}
+.fleet-management-order-code-input-form .search-field {
+    max-width: 325px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0;
+    margin-right: 4px;
+    margin-top: 19px;
+}
+.fleet-management-order-code-input-form .search-field:last-child {
+    margin-right: 0;
+}
+.fleet-management-order-code-input-form .search-field .search-field-body {
+    text-align: left;
+}
+.fleet-management-order-code-input-form .search-field .search-field-body div.inline-div {
+    /*margin-bottom: 7px;*/
+    margin-bottom: 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+.fleet-management-order-code-input-form .search-field .search-field-body div.top-padded {
+    max-width: 100%;
+    margin-top: 1px;
+    margin-bottom: 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+@media screen and (max-width: 420px) {
+    /* Lets make coupon code and order code input boxes more narrow now */
+    .fleet-management-order-code-input-form .search-field .search-field-body input.order-code {
+        width: 230px;
+    }
+}
+@media (max-width: 768px) {
+    .fleet-management-order-code-input-form .search-field .search-field-body {
+        text-align: center;
+    }
+    .fleet-management-order-code-input-form .search-field .search-field-body input.order-code {
+        /*width: 265px;*/
+        width: 230px;
+    }
+    .fleet-management-order-code-input-form .search-field .search-field-body input[type="submit"] {
+        /*width: 265px;*/
+        width: 230px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 385px) {
+    .fleet-management-order-code-input-form .search-field .search-field-header .search-field-title {
+        margin-left: 33px;
+        margin-top: 31px;
+    }
+}
+
+/******************************************************************/
+/************** ORDER FROM SINGLE ITEM MODEL PAGE *****************/
+/******************************************************************/
+.fleet-management-item-model-input-search-form {
+    background: #F7F7F7;
+    background-repeat: repeat;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    padding-left: 29px;
+    padding-right: 29px;
+    text-align: center;
+    float: left;
+    margin-bottom: 22px;
+    width: 100%;
+}
+.fleet-management-item-model-input-search-form .search-field:last-child {
+    margin-right: 0;
+    width: 246px;
+    text-align: right;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-header {
+    background: #F7F7F7;
+    width: 298px;
+    margin-left: 19px;
+    margin-right: 19px;
+    height: 150px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding-top: 44px;
+    padding-left: 70px;
+    text-align: left;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-header-with-title {
+    background: #F7F7F7;
+    width: 298px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding-top: 1px;
+    padding-left: 0;
+    text-align: left;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-header-with-title .booking-title {
+    left: -23px;
+    top: -7px;
+    position: relative;
+    margin-bottom: 3px;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-header-with-title .search-field-title {
+    text-transform: uppercase;
+    padding-left: 70px;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body div.location-title {
+    text-align: left;
+    padding-bottom: 17px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-left: 8px;
+}
+.fleet-management-item-model-input-search-form img.date-selector-image {
+    margin-top: 2px;
+    height: 25px;
+    width: 25px;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body div.narrow-dropdown select {
+    width: 100%;
+    cursor: pointer;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body div.narrow-dropdown {
+    width: 130px;
+    margin-left: 8px;
+    margin-bottom: 7px;
+    margin-right: 0;
+    display: inline-block;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body div.inline-div {
+    max-width: 100%;
+    margin-bottom: 7px;
+    display: inline-block;
+    vertical-align: top;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body div.top-padded {
+    margin-top: 3px;
+    margin-bottom: 12px;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body div.top-padded-submit {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top:0;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body img[name="datepicker"] {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body input[name="coupon_code"] {
+    max-width: 100%;
+    width: 335px;
+    border-radius: 0; /* All square here */
+    margin-right: 0;
+    font-style: normal;
+    cursor: pointer;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body input[type="submit"] {
+    max-width: 100%;
+    width: 354px;
+    border: 0px;
+    margin-right: 0;
+    padding-left: 8px;
+    padding-bottom: 2px;
+    padding-top: 0;
+    border-radius: 0px;
+    height: 103px;
+    color: #fff;
+    background-color: var(--fleet-management-primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+.fleet-management-item-model-input-search-form .search-field .search-field-body input[type="submit"]:hover {
+    background-color: var(--fleet-management-secondary-color);
+    color:#FFFFFF;
+}
+/* We need this to fit button well into page on responsive mode */
+@media (max-width: 1026px) {
+    .fleet-management-item-model-input-search-form .search-field:last-child {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/******************************************************************/
+/**************** ORDER FROM SINGLE LOCATION **********************/
+/******************************************************************/
+.fleet-management-location-input-search-form {
+    background: #F7F7F7;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    padding-left: 29px;
+    padding-right: 29px;
+    text-align: center;
+    float: left;
+    margin-bottom: 22px;
+    width: 100%;
+}
+.fleet-management-location-input-search-form .search-field {
+    width: 335px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0;
+    margin-right: 4px;
+}
+.fleet-management-location-input-search-form .search-field:last-child {
+    margin-right: 0;
+    width: 246px;
+    text-align: right;
+}
+.fleet-management-location-input-search-form .search-field .search-field-header {
+    background: #F7F7F7;
+    width: 298px;
+    margin-left: 19px;
+    margin-right: 19px;
+    height: 150px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding-top: 44px;
+    padding-left: 70px;
+    text-align: left;
+}
+.fleet-management-location-input-search-form .search-field .search-field-header-with-title {
+    background: #F7F7F7;
+    width: 298px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding-top: 1px;
+    padding-left: 0;
+    text-align: left;
+}
+.fleet-management-location-input-search-form .search-field .search-field-header-with-title .booking-title {
+    left: -23px;
+    top: -7px;
+    position: relative;
+    margin-bottom: 3px;
+}
+.fleet-management-location-input-search-form .search-field .search-field-header-with-title .search-field-title {
+    text-transform: uppercase;
+    padding-left: 70px;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body {
+
+}
+.fleet-management-location-input-search-form .search-field .search-field-body div.location-title {
+    text-align: left;
+    padding-bottom: 17px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-left: 8px;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body div.styled-select-dropdown select {
+    padding: 0px 35px 0px 10px;
+    width: 100%;
+    background: url(../../../Images/SelectDropdownIcon.svg);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-color: #fff;
+}
+
+.fleet-management-location-input-search-form img.date-selector-image {
+    margin-top: 2px;
+    height: 25px;
+    width: 25px;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body div.wide-dropdown select {
+    cursor: pointer;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body div.wide-dropdown {
+    max-width: 100%;
+    width: 325px;
+    margin-left: 0;
+    margin-bottom: 7px;
+    margin-right: 0;
+    display: inline-block;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body div.narrow-dropdown select {
+    width: 131px;
+    cursor: pointer;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body div.narrow-dropdown {
+    max-width: 100%;
+    width: 130px;
+    margin-left: 8px;
+    margin-bottom: 6px;
+    margin-right: 0;
+    display: inline-block;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body div.inline-div {
+    margin-bottom: 7px;
+    display: inline-block;
+    vertical-align: top;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body div.top-padded {
+    margin-top: 3px;
+    margin-bottom: 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body div.top-padded-submit {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body img[name="datepicker"] {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body input[name="coupon_code"] {
+    color: #666;
+    border-radius: 0px;
+    line-height: 1.2;
+    border: 1px solid #b6b6b6;
+    padding: 0px 10px 0px 10px;
+    height: 40px;
+    font-size: 14px;
+    background: #fff;
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 325px;
+    max-width: 100%;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body input[type="submit"] {
+    width: 100%;
+    cursor: pointer;
+}
+.fleet-management-location-input-search-form .search-field .search-field-body input[type="submit"]:hover {
+    color: red;
+}
+/* We need this to fit button well into page on responsive mode */
+@media (max-width: 1026px) {
+    .fleet-management-location-input-search-form .search-field:last-child {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 425px) {
+    .fleet-management-location-input-search-form .search-field .search-field-body div.narrow-dropdown{
+        width: 100%;
+        margin-left: 0px;       
+    }
+    .fleet-management-location-input-search-form .search-field .search-field-body div.narrow-dropdown select{
+        width: 100%;
+    }
+}
+/******************************************************************/
+/************************* OTHER STYLES ***************************/
+/******************************************************************/
+.fleet-management-payment-processing, .fleet-management-order-received, .fleet-management-order-updated, .fleet-management-order-cancelled {
+    /*width:400px !important;*/
+    height: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fleet-management-item-model-search-results, .fleet-management-search-options-list, .fleet-management-search-summary-table, .fleet-management-payment-processing, .fleet-management-order-received, .fleet-management-order-updated, .fleet-management-order-cancelled, .fleet-management-search-failure {
+    background: white;
+    /* we don't use this setting anymore, as it is now set from the page_type - car rental page */
+    /* margin-top: 50px; */
+    padding: 15px;
+    clear: both; /*we need this so that section before wouldn't hide*/
+}
+.fleet-management-payment-processing,
+.fleet-management-order-received,
+.fleet-management-order-updated,
+.fleet-management-order-cancelled,
+.fleet-management-search-failure {
+    padding-top: 50px;
+}
+.fleet-management-payment-processing .info-content,
+.fleet-management-order-received .info-content,
+.fleet-management-order-updated .info-content,
+.fleet-management-order-cancelled .info-content {
+    padding-top: 48px;
+    font-size: 16px;
+}
+.buttons input {
+    margin-right: 4px;
+}
+.fleet-management-item-model-search-results button[name="car_rental_do_search0"], .fleet-management-item-model-search-results input[name="car_rental_do_search0"],
+.fleet-management-item-model-search-results button[name="car_rental_do_search"], .fleet-management-item-model-search-results input[name="car_rental_do_search"],
+.fleet-management-item-model-search-results button[name="car_rental_do_search3"], .fleet-management-item-model-search-results input[name="car_rental_do_search3"],
+.fleet-management-item-model-search-results button[name="car_rental_do_search4"], .fleet-management-item-model-search-results input[name="car_rental_do_search4"],
+.fleet-management-item-model-search-results button[name="car_rental_cancel_order"], .fleet-management-item-model-search-results input[name="car_rental_cancel_order"],
+.fleet-management-search-options-list button[name="car_rental_do_search0"], .fleet-management-search-options-list input[name="car_rental_do_search0"],
+.fleet-management-search-options-list button[name="car_rental_do_search"], .fleet-management-search-options-list input[name="car_rental_do_search"],
+.fleet-management-search-options-list button[name="car_rental_do_search3"], .fleet-management-search-options-list input[name="car_rental_do_search3"],
+.fleet-management-search-options-list button[name="car_rental_do_search4"], .fleet-management-search-options-list input[name="car_rental_do_search4"],
+.fleet-management-search-options-list button[name="car_rental_cancel_order"], .fleet-management-search-options-list input[name="car_rental_cancel_order"],
+.fleet-management-search-summary-table button.login-button, .fleet-management-search-summary-table input.login-button,
+.fleet-management-search-summary-table button[name="customer_lookup"], .fleet-management-search-summary-table input[name="customer_lookup"],
+.fleet-management-search-summary-table button[name="car_rental_do_search5"], .fleet-management-search-summary-table input[name="car_rental_do_search5"],
+.fleet-management-item-model-search-results button[name="barge_booking_do_search0"], .fleet-management-item-model-search-results input[name="barge_booking_do_search0"],
+.fleet-management-item-model-search-results button[name="barge_booking_do_search"], .fleet-management-item-model-search-results input[name="barge_booking_do_search"],
+.fleet-management-item-model-search-results button[name="barge_booking_do_search3"], .fleet-management-item-model-search-results input[name="barge_booking_do_search3"],
+.fleet-management-item-model-search-results button[name="barge_booking_do_search4"], .fleet-management-item-model-search-results input[name="barge_booking_do_search4"],
+.fleet-management-item-model-search-results button[name="barge_booking_cancel_order"], .fleet-management-item-model-search-results input[name="barge_booking_cancel_order"],
+.fleet-management-search-options-list button[name="barge_booking_do_search0"], .fleet-management-search-options-list input[name="barge_booking_do_search0"],
+.fleet-management-search-options-list button[name="barge_booking_do_search"], .fleet-management-search-options-list input[name="barge_booking_do_search"],
+.fleet-management-search-options-list button[name="barge_booking_do_search3"], .fleet-management-search-options-list input[name="barge_booking_do_search3"],
+.fleet-management-search-options-list button[name="barge_booking_do_search4"], .fleet-management-search-options-list input[name="barge_booking_do_search4"],
+.fleet-management-search-options-list button[name="barge_booking_cancel_order"], .fleet-management-search-options-list input[name="barge_booking_cancel_order"],
+.fleet-management-search-summary-table button.login-button, .fleet-management-search-summary-table input.login-button,
+.fleet-management-search-summary-table button[name="customer_lookup"], .fleet-management-search-summary-table input[name="customer_lookup"],
+.fleet-management-search-summary-table button[name="barge_booking_do_search5"], .fleet-management-search-summary-table input[name="barge_booking_do_search5"]{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    margin-bottom:4px;
+    padding-bottom: 5px;
+    min-width: 130px;
+    height: 39px;
+    font-size: 14px;
+    color: white;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: 0;
+    cursor: pointer;
+}
+.fleet-management-item-model-search-results button[name="car_rental_do_search0"]:hover, .fleet-management-item-model-search-results input[name="car_rental_do_search0"]:hover,
+.fleet-management-item-model-search-results button[name="car_rental_do_search"]:hover, .fleet-management-item-model-search-results input[name="car_rental_do_search"]:hover,
+.fleet-management-item-model-search-results button[name="car_rental_do_search3"]:hover, .fleet-management-item-model-search-results input[name="car_rental_do_search3"]:hover,
+.fleet-management-item-model-search-results button[name="car_rental_do_search4"]:hover, .fleet-management-item-model-search-results input[name="car_rental_do_search4"]:hover,
+.fleet-management-item-model-search-results button[name="car_rental_cancel_order"]:hover, .fleet-management-item-model-search-results input[name="car_rental_cancel_order"]:hover,
+.fleet-management-search-options-list button[name="car_rental_do_search0"]:hover, .fleet-management-search-options-list input[name="car_rental_do_search0"]:hover,
+.fleet-management-search-options-list button[name="car_rental_do_search"]:hover, .fleet-management-search-options-list input[name="car_rental_do_search"]:hover,
+.fleet-management-search-options-list button[name="car_rental_do_search3"]:hover, .fleet-management-search-options-list input[name="car_rental_do_search3"]:hover,
+.fleet-management-search-options-list button[name="car_rental_do_search4"]:hover, .fleet-management-search-options-list input[name="car_rental_do_search4"]:hover,
+.fleet-management-search-options-list button[name="car_rental_cancel_order"]:hover, .fleet-management-search-options-list input[name="car_rental_cancel_order"]:hover,
+.fleet-management-search-summary-table button.login-button:hover, .fleet-management-search-summary-table input.login-button:hover,
+.fleet-management-search-summary-table button[name="customer_lookup"]:hover, .fleet-management-search-summary-table input[name="customer_lookup"]:hover,
+.fleet-management-search-summary-table button[name="car_rental_do_search5"]:hover, .fleet-management-search-summary-table input[name="car_rental_do_search5"]:hover {
+    background-color: var(--fleet-management-secondary-color);
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-item-model-search-results button[name="car_rental_do_search0"], .fleet-management-item-model-search-results input[name="car_rental_do_search0"],
+    .fleet-management-item-model-search-results button[name="car_rental_do_search"], .fleet-management-item-model-search-results input[name="car_rental_do_search"],
+    .fleet-management-item-model-search-results button[name="car_rental_do_search2"], .fleet-management-item-model-search-results input[name="car_rental_do_search2"],
+    .fleet-management-item-model-search-results button[name="car_rental_do_search3"], .fleet-management-item-model-search-results input[name="car_rental_do_search3"],
+    .fleet-management-item-model-search-results button[name="car_rental_do_search4"], .fleet-management-item-model-search-results input[name="car_rental_do_search4"],
+    .fleet-management-item-model-search-results button[name="car_rental_cancel_order"], .fleet-management-item-model-search-results input[name="car_rental_cancel_order"],
+    .fleet-management-search-options-list button[name="car_rental_do_search0"], .fleet-management-search-options-list input[name="car_rental_do_search0"],
+    .fleet-management-search-options-list button[name="car_rental_do_search"], .fleet-management-search-options-list input[name="car_rental_do_search"],
+    .fleet-management-search-options-list button[name="car_rental_do_search2"], .fleet-management-search-options-list input[name="car_rental_do_search2"],
+    .fleet-management-search-options-list button[name="car_rental_do_search3"], .fleet-management-search-options-list input[name="car_rental_do_search3"],
+    .fleet-management-search-options-list button[name="car_rental_do_search4"], .fleet-management-search-options-list input[name="car_rental_do_search4"],
+    .fleet-management-search-options-list button[name="car_rental_cancel_order"], .fleet-management-search-options-list input[name="car_rental_cancel_order"],
+    .fleet-management-search-summary-table button.login-button, .fleet-management-search-summary-table input.login-button,
+    .fleet-management-search-summary-table button[name="customer_lookup"], .fleet-management-search-summary-table input[name="customer_lookup"],
+    .fleet-management-search-summary-table button[name="car_rental_do_search5"], .fleet-management-search-summary-table input[name="car_rental_do_search5"] {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+.fleet-management-item-model-search-results button.selected {
+    border: 2px solid #585858;
+    background-color: #54770f;
+}
+/*!*.fleet-management-item-model-search-results {*! What is the reason for this? ?*/
+/*    margin-bottom: 30px;*/
+/*}*/
+.fleet-management-search-options-list #form1 {
+    margin-top: 25px;
+}
+.fleet-management-item-model-search-results h2.summary-page-title,
+.fleet-management-search-options-list h2.summary-page-title,
+.fleet-management-search-summary-table h2.summary-page-title,
+.fleet-management-wrapper h2.search-label,
+.fleet-management-wrapper h2.customer-select-label {
+    font-size: 24px;
+    line-height: 1.667;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.fleet-management-wrapper .guest-customer-lookup-section + h2.search-label {
+    margin-top: 25px;
+}
+.fleet-management-item-model-search-results .item-models-list-header {
+    clear: both;
+    width: 100%;
+    float: left;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    font-size: 12px;
+}
+
+.fleet-management-wrapper .location-summary {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.fleet-management-wrapper .location-summary .summary-data-row {
+    /*width: 24%;*/ /*4 columns*/
+    width: 32.33%; /*3 colums*/
+    margin-right: 1%;
+    margin-bottom: 11px;
+    float: left;
+}
+.fleet-management-wrapper .location-summary .summary-data-row:last-child {
+    margin-right: 0;
+}
+.fleet-management-wrapper .location-summary .summary-data-row-wide {
+    width: 32.33%; /*3 colums*/
+    margin-right: 1%;
+    margin-bottom: 11px;
+    float: left;
+}
+.fleet-management-wrapper .location-summary .summary-data-row-wide:last-child {
+    margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-wrapper .location-summary .summary-data-row {
+        width: 100%;
+    }
+    .fleet-management-wrapper .location-summary .summary-data-row-wide {
+        width: 100%;
+    }
+    .fleet-management-item-model-search-results .item-models-list-header {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-item-models-list .item-model-wrap .item-model-more {
+        margin-top: 15px;
+    }
+    .location-summary .summary-data {
+        width: 100%;
+    }
+}
+
+.location-summary .summary-caption {
+    width:100%;
+    float:left;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-align:center;
+    text-transform:uppercase;
+    background: #DE2E2F; /* IE 11 Compatibility */
+    background: var(--fleet-management-primary-color);
+    font-weight:bold;
+    color:#fff;
+    font-size:12px;
+}
+.location-summary .location-group {
+    float: left;
+    width: 100%;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    font-size: 14px;
+}
+.location-summary .summary-data {
+    float: left;
+    padding: 5px;
+    width: 100%;
+}
+.location-summary .summary-data-icon {
+    width: 7%;
+    float: left;
+    clear: both;
+}
+.location-summary .summary-data-text {
+    width: 93%;
+    float: left;
+}
+#search-results-title {
+    float: left;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.search-label,
+.customer-select-label,
+.login-label {
+    clear: both;
+    text-transform: uppercase;
+}
+
+/******************************************************************/
+/***************** LOCATION SEARCH RESULT STYLES ******************/
+/******************************************************************/
+
+/* This section is reserved for future */
+
+
+/******************************************************************/
+/*************** ITEM MODEL SEARCH RESULT STYLES ******************/
+/******************************************************************/
+.search-result-form-wrapper {
+    float: left;
+}
+.fleet-management-item-model-search-results .item-models-list-header .col1 {
+    float: left;
+    width: 64%;
+    text-transform: uppercase;
+    padding-left: 2%;
+}
+.fleet-management-item-model-search-results .item-models-list-header .col3 {
+    float: left;
+    width: 11%;
+    text-transform: uppercase;
+}
+.fleet-management-item-model-search-results .item-models-list-header .col4 {
+    float: left;
+    width: 10%;
+    text-transform: uppercase;
+}
+.fleet-management-item-model-search-results .item-models-list-header .col5 {
+    float: right;
+    width: 14%;
+    text-align: right;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-item-model-search-results .item-models-list-header .col1 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-item-model-search-results .item-models-list-header .col3 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-item-model-search-results .item-models-list-header .col4 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-item-model-search-results .item-models-list-header .col5 {
+        display: none;
+        visibility: hidden;
+    }
+}
+.fleet-management-item-model-search-results .item-model-wrap,.fleet-management-item-models-list .item-model-wrap {
+    clear: both;
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #afafaf;
+}
+.fleet-management-item-model-search-results .item-model-wrap .col1 {
+    float: left;
+    width: 25%;
+}
+.fleet-management-item-model-search-results .item-model-wrap .col2 {
+    float: left;
+    width: 39%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.fleet-management-item-model-search-results .item-model-wrap .col3 {
+    float: left;
+    width: 11%;
+    padding-top: 5%;
+}
+.fleet-management-item-model-search-results .item-model-wrap .col3 .price-per-period {
+    font-size: 12px;
+}
+.fleet-management-item-model-search-results .item-model-wrap .col4 {
+    float: left;
+    width: 10%;
+    padding-top: 5%;
+}
+.fleet-management-item-model-search-results .item-model-wrap .col5 {
+    float: right;
+    /*width: 2%;*/
+    width: 14%;
+    text-align: right;
+    padding-top: 4.5%;
+    padding-right: 1%;
+}
+.fleet-management-item-model-search-results .item-model-wrap .price-per-period {
+    font-size: 13px;
+}
+.fleet-management-item-model-search-results label.checkbox input[type="checkbox"] {
+    display:none;
+}
+.fleet-management-item-model-search-results label.checkbox span {
+    display:inline-block;
+    border:2px solid #585858;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #DE2E2F; /* IE 11 Compatibility */
+    background: var(--fleet-management-primary-color);
+    vertical-align:middle;
+    color:white;
+    cursor:pointer;
+    text-align:center
+}
+.fleet-management-item-model-search-results label.checkbox :checked + span {
+    background:#54770f;
+}
+.fleet-management-item-model-search-results .item-model-wrap .mobile-only {
+    display: none;
+    visibility: hidden;
+}
+.fleet-management-item-model-search-results .item-model-wrap .item-model-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-item-model-search-results .item-model-wrap a:hover .item-model-name {
+    color: #DE2E2F;
+    color: var(--fleet-management-primary-color);
+}
+.fleet-management-item-model-search-results .buttons {
+    clear: both;
+    padding-top: 30px;
+    text-align: right;
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-item-model-search-results .item-model-wrap .col1 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .fleet-management-item-model-search-results .item-model-wrap .col2 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .fleet-management-item-model-search-results .item-model-wrap .col3 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        padding-top: 0;
+    }
+    .fleet-management-item-model-search-results .item-model-wrap .col4 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        padding-top: 0;
+    }
+    .fleet-management-item-model-search-results .item-model-wrap .col5 {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fleet-management-item-model-search-results .item-model-wrap .mobile-only {
+        display: inline-block;
+        visibility: visible;
+    }
+    .fleet-management-item-model-search-results .buttons {
+        text-align: center;
+    }
+}
+.fleet-management-item-model-search-results div.class-label,.fleet-management-item-models-list div.class-label {
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    float:left;
+    width:100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size:12px
+}
+.fleet-management-item-model-search-results:after {
+    clear: both;
+}
+.fleet-management-item-model-search-results .clear {
+    clear: both;
+}
+
+/******************************************************************/
+/********************* SEARCH OPTIONS STYLES **********************/
+/******************************************************************/
+.fleet-management-search-options-list {
+    margin-bottom: 30px;
+}
+.fleet-management-search-options-list .item-models-list-header {
+    clear: both;
+    width: 100%;
+    float: left;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+.fleet-management-search-options-list .mobile-only {
+    display: none;
+    visibility: hidden;
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-search-options-list .item-models-list-header {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .mobile-only {
+        display: inline-block;
+        visibility: visible;
+    }
+}
+.fleet-management-search-options-list input[type="range"] {
+    cursor: pointer;
+    width: 120px;
+}
+.fleet-management-search-options-list .item-models-list-header .col1 {
+    float: left;
+    width: 36%;
+    text-transform: uppercase;
+    padding-left: 2%;
+}
+.fleet-management-search-options-list .item-models-list-header .col2 {
+    float: left;
+    width: 31%;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-transform: uppercase;
+}
+.fleet-management-search-options-list .item-models-list-header .col3 {
+    float: left;
+    width: 13%;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-transform: uppercase;
+}
+.fleet-management-search-options-list .item-models-list-header .col4 {
+    float: left;
+    width: 13%;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-transform: uppercase;
+}
+.fleet-management-search-options-list .item-models-list-header .col5 {
+    float: right;
+    width: 6%;
+    padding-right: 2%;
+    text-transform: uppercase;
+}
+.fleet-management-search-options-list .extras-list-header {
+    clear: both;
+    width: 100%;
+    float: left;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+.fleet-management-search-options-list .extras-list-header .col1 {
+    float: left;
+    width: 36%;
+    text-transform: uppercase;
+    padding-left: 2%;
+}
+.fleet-management-search-options-list .extras-list-header .col2 {
+    float: left;
+    width: 31%;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-transform: uppercase;
+}
+.fleet-management-search-options-list .extras-list-header .col3 {
+    float: left;
+    width: 13%;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-transform: uppercase;
+}
+.fleet-management-search-options-list .extras-list-header .col4 {
+    float: left;
+    width: 13%;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-transform: uppercase;
+}
+.fleet-management-search-options-list .extras-list-header .col5 {
+    float: right;
+    width: 6%;
+    padding-right: 2%;
+    text-transform: uppercase;
+}
+.fleet-management-search-options-list .extra-options select {
+    margin-left: 11px;
+    width: 200px;
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-search-options-list .item-models-list-header .col1 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .item-models-list-header .col2 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .item-models-list-header .col3 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .item-models-list-header .col4 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .item-models-list-header .col5 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .extras-list-header .col1 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .extras-list-header .col2 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .extras-list-header .col3 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .extras-list-header .col4 {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-options-list .extras-list-header .col5 {
+        display: none;
+        visibility: hidden;
+    }
+}
+.fleet-management-search-options-list .selected-item-model {
+    width: 100%;
+    float: left;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fleet-management-search-options-list .selected-item-model:nth-child(even) {
+    background-color: #ededed;
+}
+.fleet-management-search-options-list .selected-item-model:nth-child(odd) {
+
+}
+.fleet-management-search-options-list .selected-item-model .col1 {
+    float: left;
+    width: 36%;
+    padding-left: 2%;
+}
+.fleet-management-search-options-list .selected-item-model .col2 {
+    float: left;
+    width: 31%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.fleet-management-search-options-list .selected-item-model .col3 {
+    float: left;
+    width: 13%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.fleet-management-search-options-list .selected-item-model .col4 {
+    float: left;
+    width: 13%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.fleet-management-search-options-list .selected-item-model .col5 {
+    float: right;
+    width: 6%;
+    padding-right: 2%;
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-search-options-list .selected-item-model .col1 {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .fleet-management-search-options-list .selected-item-model .col2 {
+        width: 100%;
+        text-align: center;
+    }
+    .fleet-management-search-options-list .selected-item-model .col3 {
+        width: 100%;
+        text-align: center;
+    }
+    .fleet-management-search-options-list .selected-item-model .col4 {
+        width: 100%;
+        text-align: center;
+    }
+    .fleet-management-search-options-list .selected-item-model .col5 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.fleet-management-search-options-list .extra {
+    width: 100%;
+    float: left;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fleet-management-search-options-list .extra-description-link {
+    text-transform: uppercase;
+}
+.fleet-management-search-options-list .extra:nth-child(even) {
+    background-color: #ededed;
+}
+.fleet-management-search-options-list .extra:nth-child(odd) {
+
+}
+.fleet-management-search-options-list .extra .col1 {
+    float: left;
+    width: 36%;
+    padding-left: 2%;
+}
+.fleet-management-search-options-list .extra .col2 {
+    float: left;
+    width: 25%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.fleet-management-search-options-list .extra .col3 {
+    float: left;
+    width: 13%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.fleet-management-search-options-list .extra .col4 {
+    float: left;
+    width: 13%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.fleet-management-search-options-list .extra .col5 {
+    float: right;
+    padding-right: 1%;
+    text-align: right;
+}
+.fleet-management-search-options-list .buttons {
+    clear: both;
+    padding-top: 30px;
+    text-align: right;
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-search-options-list .extra .col1 {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fleet-management-search-options-list .extra .col2 {
+        width: 100%;
+        text-align: center;
+    }
+    .fleet-management-search-options-list .extra .col3 {
+        width: 100%;
+        text-align: center;
+    }
+    .fleet-management-search-options-list .extra .col4 {
+        width: 100%;
+        text-align: center;
+    }
+    .fleet-management-search-options-list .extra .col5 {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fleet-management-search-options-list .buttons {
+        text-align: center;
+    }
+}
+
+
+
+.fleet-management-search-summary-table {
+    margin-bottom: 30px;
+}
+.fleet-management-search-summary-table table {
+    font-size: 14px;
+}
+.fleet-management-search-summary-table table td {
+    padding: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Force table to not be like tables anymore */
+    .fleet-management-search-summary-table table,
+    .fleet-management-search-summary-table table thead,
+    .fleet-management-search-summary-table table tbody,
+    .fleet-management-search-summary-table table th,
+    .fleet-management-search-summary-table table td,
+    .fleet-management-search-summary-table table tr {
+        display: block;
+    }
+    .fleet-management-search-summary-table table tr:first-child {
+        border-top: 2px solid #747474;
+    }
+    .fleet-management-search-summary-table table tr {
+        border-bottom: 2px solid #747474;
+    }
+
+    /* Make necessary cols as centered 100% width for responsive mode */
+    .fleet-management-search-summary-table table .col1,
+    .fleet-management-search-summary-table table .col2,
+    .fleet-management-search-summary-table table .col3
+    {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+    }
+
+    .fleet-management-search-summary-table table .duration-headers .col3
+    {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-summary-table table .duration-details .col3
+    {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-summary-table table .item-models-header .col2,
+    .fleet-management-search-summary-table table .item-models-header .col3
+    {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-summary-table table .location-fees-header .col2,
+    .fleet-management-search-summary-table table .location-fees-header .col3
+    {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-summary-table table .extras-header .col2,
+    .fleet-management-search-summary-table table .extras-header .col3
+    {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-search-summary-table table .additional-fees-header .col2,
+    .fleet-management-search-summary-table table .additional-fees-header .col3
+    {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.fleet-management-search-summary-table .form-row-wide {
+    float: left;
+    width: 73%;
+    padding-right: 1%;
+}
+.fleet-management-search-summary-table .login-form .login-fields {
+    float: left;
+    width: 65%; /* Use to match next section button */
+}
+.fleet-management-search-summary-table .login-form input.login-account-id-or-email {
+    width: 43%;
+}
+.fleet-management-search-summary-table .login-form input.login-password {
+    width: 53.25%;
+}
+.fleet-management-search-summary-table .customer-select select {
+    width: 49%;
+}
+.fleet-management-search-summary-table .customer-email-search {
+    float: left;
+    width: 29%; /* Standard 31 chars long e-mail to be displayed without cutting */
+    padding-right: 1%;
+}
+.fleet-management-search-summary-table .customer-email-search .search-customer-email-address {
+    width: 100%;
+}
+.fleet-management-search-summary-table .customer-birthdate-search {
+    float: left;
+    width: 36%;
+    padding-right: 1%;
+    font-size: 14px;
+}
+.fleet-management-search-summary-table .customer-birthdate-search select.search-customer-birth-month {
+    width: 29%;
+}
+.fleet-management-search-summary-table .customer-birthdate-search select.search-customer-birth-day {
+    width: 24%;
+}
+.fleet-management-search-summary-table .customer-birthdate-search select.search-customer-birth-year {
+    width: 42%;
+}
+.fleet-management-search-summary-table .customer-lookup-button {
+    float: left;
+    width: 24%;
+}
+.fleet-management-search-summary-table .ajax-loader {
+    float: left;
+    width: 21%;
+    padding-top: 10px;
+}
+.fleet-management-search-summary-table .customer-data-label {
+    clear: both;
+    width: 20%;
+    float: left;
+    padding-top: 13px;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 300;
+}
+.fleet-management-search-summary-table .customer-data-input {
+    width: 80%;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.fleet-management-search-summary-table .customer-data-input .customer-title { /* Title input length now matches other columns */
+    width: 100%;
+}
+.fleet-management-search-summary-table .customer-data-input .payment-method-name {
+    color: black;
+}
+.fleet-management-search-summary-table .customer-data-input .padded-payment-method-description {
+    padding-left: 22px;
+    padding-bottom: 11px;
+}
+.fleet-management-search-summary-table .login-form input[type="text"],
+.fleet-management-search-summary-table .login-form input[type="password"],
+.fleet-management-search-summary-table .customer-data-input input[type="text"],
+.fleet-management-search-summary-table .customer-email-search input[type="text"]
+{
+    padding: 9px 15px;
+}
+.fleet-management-search-summary-table .customer-select select,
+.fleet-management-search-summary-table .customer-data-input select,
+.fleet-management-search-summary-table .customer-birthdate-search select,
+.fleet-management-search-summary-table .customer-data-input textarea
+{
+    padding: 8px 15px;
+}
+.fleet-management-search-summary-table .customer-data-input input[type="text"],
+.fleet-management-search-summary-table .customer-data-input textarea
+{
+    width: 100%;
+}
+.fleet-management-search-summary-table .customer-data-input input[type="text"].disabled,
+.fleet-management-search-summary-table .customer-data-input select.disabled,
+.fleet-management-search-summary-table .customer-data-input textarea.disabled
+{
+    color: black;
+}
+.fleet-management-search-summary-table .customer-data-input select
+{
+    width: 32.8%;
+}
+.fleet-management-search-summary-table .customer-birthday-select select:last-child
+{
+    text-align: left;
+    float: right;
+    margin-right: 0;
+}
+.fleet-management-search-summary-table .customer-data-input select[name="title"]
+{
+    width: 100%;
+}
+.fleet-management-search-summary-table .customer-data-input input[type="checkbox"].terms-and-conditions {
+    width: 15px;
+}
+.fleet-management-search-summary-table .action-buttons {
+    clear: both;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+.fleet-management-search-summary-table .form-row {
+    width: 49%;
+    margin-right: 1%;
+    float: left;
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-search-summary-table .form-row {
+        width: 100%;
+        margin: 0;
+    }
+    .fleet-management-search-summary-table .form-row-wide {
+        width: 100%;
+        margin: 0;
+    }
+    .fleet-management-search-summary-table .customer-select select {
+        width: 100%;
+    }
+    .fleet-management-search-summary-table .customer-textarea {
+        display: block;
+        width: 100%;
+    }
+    .fleet-management-search-summary-table .customer-birthday-select select{
+        margin-bottom: 5px;
+    }
+    .fleet-management-search-summary-table .customer-data-input select,
+    .fleet-management-search-summary-table .customer-data-input textarea
+    {
+        width: 100%;
+    }
+    .fleet-management-search-summary-table .login-button,
+    .fleet-management-search-summary-table .customer-email-search,
+    .fleet-management-search-summary-table .customer-birthdate-search,
+    .fleet-management-search-summary-table .customer-lookup-button,
+    .fleet-management-search-summary-table .ajax-loader {
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .fleet-management-search-summary-table .customer-data-label,
+    .fleet-management-search-summary-table .customer-data-input {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+    .fleet-management-search-summary-table .customer-data-input .padded-payment-method-description {
+        padding-left: 0;
+    }
+    .fleet-management-search-summary-table .action-buttons {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .fleet-management-search-summary-table .login-form .login-fields {
+        width: 100%;
+    }
+}
+
+.fleet-management-search-failure {
+    margin-top: 20px;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: #424B58;
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    margin-bottom: 20px;
+}
+.fleet-management-search-failure .failure-title {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+.fleet-management-search-failure .failure-content {
+    border-top: 2px solid black;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.fleet-management-wrapper .fleet-management-search-failure .buttons,
+.fleet-management-wrapper .fleet-management-order-cancelled .buttons,
+.fleet-management-search-failure .failure-content .buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+.fleet-management-wrapper .back-button,
+.fleet-management-wrapper .home-button {
+    max-width: 100%;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+.fleet-management-wrapper .home-button:hover,
+.fleet-management-wrapper .back-button:hover {
+    background-color: #c0c0c0;
+}
+
+/******************************************************************/
+/******************* SINGLE ITEM MODEL ****************************/
+/******************************************************************/
+.fleet-management-item-model-details {
+
+}
+.fleet-management-item-model-details .item-model-images {
+    float: left;
+    width: 35%;
+}
+.fleet-management-item-model-details .item-model-images .item-model-small-image {
+    padding-top: 5px;
+    width: 33.3%;
+    float: left;
+    display: block;
+}
+.fleet-management-item-model-details .item-model-images .item-model-small-image:nth-child(1) {
+    text-align: left;
+}
+.fleet-management-item-model-details .item-model-images .item-model-small-image:nth-child(2) {
+    text-align: center;
+}
+.fleet-management-item-model-details .item-model-images .item-model-small-image:nth-child(3) {
+    text-align: right;
+}
+.fleet-management-item-model-details .item-model-images hr {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: none;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.fleet-management-item-model-details .item-model-description {
+    float: left;
+    width: 61.5%;
+    padding-left: 4%;
+}
+.fleet-management-item-model-details .features-section {
+    clear: both;
+    width: 100%;
+    float: left;
+}
+.fleet-management-item-model-details .features-section .section-title {
+    border-bottom: 3px solid #DE2E2F; /* IE 11 Compatibility */
+    border-bottom: 3px solid var(--fleet-management-primary-color);
+    float: left;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 100%;
+    padding-bottom:4px
+}
+.fleet-management-item-model-details .features-section ul.feature-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.fleet-management-item-model-details .features-section ul.feature-list li:before {
+
+}
+.fleet-management-item-model-details .features-section ul.feature-list ul li {
+    text-indent: -5px;
+}
+.fleet-management-item-model-details .info-line {
+    float: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #afafaf;
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .fleet-management-item-model-details .item-model-images {
+        width: 100%;
+    }
+    .fleet-management-item-model-details .item-model-images img {
+        width: 100%;
+    }
+    .fleet-management-item-model-details .item-model-images .item-model-small-image:nth-child(1) {
+        padding-right: 3px;
+    }
+    .fleet-management-item-model-details .item-model-images .item-model-small-image:nth-child(2) {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .fleet-management-item-model-details .item-model-images .item-model-small-image:nth-child(3) {
+        padding-left: 3px;
+    }
+    .fleet-management-item-model-details .item-model-description {
+        width: 100%;
+        padding-left: 0;
+    }
+    .fleet-management-item-model-details .info-line {
+        width: 100%;
+    }
+}
+
+
+/******************************************************************/
+/*********************** ITEM MODELS LIST *************************/
+/******************************************************************/
+.fleet-management-item-models-list {
+    clear: both;
+}
+
+.fleet-management-item-models-list .item-model-wrap {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #afafaf;
+}
+.fleet-management-item-models-list .item-model-wrap .item-model-image {
+    float: left;
+    text-align: center;
+    width: 23.5%;
+}
+.fleet-management-item-models-list .item-model-wrap .item-model-description {
+    text-align: left;
+    float: left;
+    padding-left: 3%;
+    font-size: 14px;
+    line-height: 15px;
+    width: 30%;
+}
+.fleet-management-item-models-list .item-model-wrap .item-model-more {
+    text-align: left;
+    float: right;
+    padding-left: 3%;
+    font-size: 12px;
+    line-height: 15px;
+    width: 46.5%;
+}
+.fleet-management-item-models-list .action-buttons {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+.fleet-management-item-models-list .single-button {
+    float: right;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #DE2E2F; /* IE 11 Compatibility */
+    background: var(--fleet-management-primary-color);
+    color: white;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-list .single-button:hover {
+    background-color: var(--fleet-management-secondary-color);
+    color: #FFFFFF;
+}
+.fleet-management-item-models-list .single-button a {
+    color: white;
+    text-decoration: none;
+}
+.fleet-management-item-models-list .info-line .fa,.fleet-management-item-model-search-results .info-line .fa,.fleet-management-item-model-details .info-line .fa {
+    margin-right: 5px;
+    color: #000;
+}
+.fleet-management-item-models-list .item-model-more hr {
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: medium none;
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: 4px;
+}
+.fleet-management-item-models-list .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+    color: #333333;
+    line-height: 15px;
+}
+.fleet-management-item-models-list .info-line {
+    float: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #afafaf;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .fleet-management-item-models-list .item-model-wrap .item-model-image {
+        width: 100%;
+    }
+    .fleet-management-item-models-list .item-model-wrap .item-model-description {
+        width: 100%;
+    }
+    .fleet-management-item-models-list .item-model-wrap .item-model-more {
+        width: 100%;
+    }
+}
+.fleet-management-item-models-list .item-model-wrap .item-model-image .fusion-flip-box {
+    cursor: pointer;
+}
+.fleet-management-item-models-list .item-model-wrap .item-model-image .fusion-flip-box .flip-box-front {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.fleet-management-item-models-list .item-model-wrap .item-model-image .fusion-flip-box .flip-box-back .flip-box-back-inner {
+    margin-top: 40px !important;
+}
+.fleet-management-item-models-list .item-model-wrap .item-model-image img {
+    width: 240px;
+    height: 150px;
+}
+
+.fleet-management-item-models-list .item-model-wrap .item-model-description .item-model-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-list .item-model-wrap .item-model-description hr {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: none;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.fleet-management-item-models-list .no-item-models-in-category {
+    text-align: center;
+}
+.fleet-management-item-models-list .no-item-models-available {
+    text-align: center;
+}
+
+/*****************************************************************/
+/******************* LOCATIONS LIST ******************************/
+/*****************************************************************/
+.fleet-management-locations-list {
+    clear: both;
+}
+
+.fleet-management-locations-list .location {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #afafaf;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+.fleet-management-locations-list .location:first-child {
+    border-top: 0 none transparent;
+}
+/* 4 sections - #1 */
+.fleet-management-locations-list .location .location-description {
+    text-align: left;
+    float: left;
+    font-size: 14px;
+    line-height: 15px;
+    width: 38.5%;
+    padding-right: 2%;
+}
+/* 4 sections - #2 */
+.fleet-management-locations-list .location .location-business-hours {
+    text-align: left;
+    float: left;
+    font-size: 12px;
+    line-height: 15px;
+    width: 20%;
+    padding-right: 2%;
+}
+/* 4 sections - #3 */
+.fleet-management-locations-list .location .location-more {
+    text-align: left;
+    float: left;
+    font-size: 12px;
+    line-height: 15px;
+    width: 24%;
+    padding-right: 2%;
+}
+/* 4 sections - #4 */
+.fleet-management-locations-list .location .location-image {
+    float: left;
+    text-align: right;
+    width: 17.5%;
+}
+@media (max-width: 768px) {
+    .fleet-management-locations-list .location {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .fleet-management-locations-list .location .location-description {
+        width: 100%;
+    }
+    .fleet-management-locations-list .location .location-more {
+        width: 100%;
+    }
+    .fleet-management-locations-list .location .location-image {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .fleet-management-locations-list .location .location-business-hours {
+        margin: 20px 0;
+        width: 100%;
+    }
+}
+/* The rest css */
+.fleet-management-locations-list .action-buttons {
+    width: 100%;
+    margin-top: 59px;
+}
+.fleet-management-locations-list .single-button {
+    float: left;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #DE2E2F; /* IE 11 Compatibility */
+    background: var(--fleet-management-primary-color);
+    color: white;
+    text-transform: uppercase;
+}
+.fleet-management-locations-list .single-button:hover {
+    background: var(--fleet-management-secondary-color);
+}
+.fleet-management-locations-list .single-button a {
+    color: white;
+    text-decoration: none;
+}
+.fleet-management-locations-list .data-row .fa,
+.fleet-management-locations-list ul li .fa {
+    margin-right: 5px;
+    color: #000;
+}
+.fleet-management-locations-list .location-business-hours hr,
+.fleet-management-locations-list .location-more hr {
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: medium none;
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: 4px;
+}
+.fleet-management-locations-list .location-features-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+    color: #333333;
+    line-height: 15px;
+}
+.fleet-management-locations-list .data-row {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid #afafaf;
+    width: 100%;
+    line-height: 1.5em;
+}
+.fleet-management-locations-list .location .location-image img {
+    width: 179px;
+    height: 179px;
+}
+.fleet-management-locations-list .location .location-description .location-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-locations-list .location .location-description hr {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: none;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.fleet-management-locations-list .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    color: #333333;
+    line-height: 15px;
+}
+.fleet-management-locations-list ul.business-hours-list,
+.fleet-management-locations-list ul.fees-list {
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.fleet-management-locations-list ul.lunch-hours-list {
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 63px;
+}
+
+.fleet-management-locations-list ul.business-hours-list li,
+.fleet-management-locations-list ul.lunch-hours-list li,
+.fleet-management-locations-list ul.fees-list li {
+    list-style: none;
+    border-bottom: 1px solid #afafaf;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 14px;
+}
+.fleet-management-locations-list .no-locations-available {
+    text-align: center;
+}
+
+
+/*****************************************************************/
+/******************** SINGLE LOCATION ****************************/
+/*****************************************************************/
+.fleet-management-single-location {
+    clear: both;
+}
+/* 3 sections - #1 */
+.fleet-management-single-location .location-images {
+    float: left;
+    width: 35%;
+}
+.fleet-management-single-location .location-description {
+    float: left;
+    width: 61.5%;
+    padding-left: 4%;
+    font-size: 16px;
+}
+/* 3 sections - #2, #3 */
+.fleet-management-single-location .location-description .location-more {
+    text-align: left;
+    float: left;
+    width: 50%;
+    padding-right: 2%;
+}
+@media (max-width: 768px) {
+    .fleet-management-single-location .location-images {
+        width: 100%;
+    }
+    .fleet-management-single-location .location-description {
+        width: 100%;
+        padding-left: 0;
+    }
+    .fleet-management-single-location .location-description .location-more {
+        width: 100%;
+    }
+}
+.fleet-management-single-location .location-images .location-small-image {
+    padding-top: 5px;
+    width: 33.3%;
+    float: left;
+    display: block;
+}
+.fleet-management-single-location .location-images .location-small-image:nth-child(1) {
+    text-align: left;
+}
+.fleet-management-single-location .location-images .location-small-image:nth-child(2) {
+    text-align: center;
+}
+.fleet-management-single-location .location-images .location-small-image:nth-child(3) {
+    text-align: right;
+}
+.fleet-management-single-location .location-more .fa,
+.fleet-management-single-location ul li .fa {
+    margin-right: 5px;
+    color: #000;
+}
+.fleet-management-single-location .location-images hr {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: none;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+@media (max-width: 768px) {
+    .fleet-management-single-location .location-images img {
+        width: 100%;
+    }
+    .fleet-management-single-location .location-images .location-small-image:nth-child(1) {
+        padding-right: 3px;
+    }
+    .fleet-management-single-location .location-images .location-small-image:nth-child(2) {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .fleet-management-single-location .location-images .location-small-image:nth-child(3) {
+        padding-left: 3px;
+    }
+}
+
+.fleet-management-single-location .location-description hr {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: none;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.fleet-management-single-location .section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 15px;
+    padding-bottom: 4px;
+}
+.fleet-management-single-location .section-title.top-padded {
+    padding-top: 34px;
+}
+.fleet-management-single-location .data-row {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.fleet-management-single-location ul {
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.fleet-management-single-location ul.business-hours-list li,
+.fleet-management-single-location ul.lunch-hours-list li,
+.fleet-management-single-location ul.fees-list li {
+    list-style: none;
+    border-bottom: 1px solid #afafaf;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 16px;
+}
+
+/*****************************************************************/
+/******************* ITEM PRICE TABLE ****************************/
+/*****************************************************************/
+
+.fleet-management-item-models-price-table {
+    margin-bottom: 14px;
+}
+.fleet-management-item-models-price-table .price-table {
+    width: 100%;
+}
+.fleet-management-item-models-price-table tr.table-labels {
+    font-size: 14px;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    color: #FFF;
+    text-align: left;
+    height: 25px;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-price-table tr.classified-table-labels {
+    font-size: 14px;
+    height: 21px;
+}
+.fleet-management-item-models-price-table th.item-label {
+    width: 300px;
+    text-align: left;
+    font-weight: normal;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-price-table th.classified-item-label {
+    width: 290px;
+    text-align: left;
+    font-weight: normal;
+    padding: 1px 1px 1px 10px;
+}
+.fleet-management-item-models-price-table th.item-model-price-on-duration {
+    width: 100px;
+    text-align: center;
+    font-weight: normal;
+}
+.fleet-management-item-models-price-table th.item-model-deposit {
+    width: 100px;
+    text-align: center;
+    font-weight: normal;
+}
+.fleet-management-item-models-price-table .item-model-row {
+
+}
+.fleet-management-item-models-price-table tr.class-label {
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    height: 25px;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-price-table tr.class-label td.class-name {
+    padding: 1px 1px 1px 10px;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-image {
+    width: 120px;
+    text-align: center;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-image img {
+    width: 100px;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-description {
+    padding: 5px 1px;
+    text-align: left;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-description .item-model-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-description a:hover .item-model-name {
+    color: #DE2E2F;
+    color: var(--fleet-management-primary-color);
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-description hr {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: none;
+    height: 3px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.fleet-management-item-models-price-table th.item-model-price-on-duration span {
+    display: block;
+    min-width: 70px;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-price-on-duration {
+    text-align: center;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-price-on-duration span {
+    cursor: pointer;
+}
+.fleet-management-item-models-price-table tr.item-model-row .item-model-deposit {
+    text-align: center;
+}
+.fleet-management-item-models-price-table tr td.no-item-models-in-category {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.fleet-management-item-models-price-table .item-model-description-separator {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .fleet-management-item-models-price-table {
+        overflow-x: scroll;
+    }
+    .fleet-management-item-models-price-table tr.item-model-row .item-model-image {
+        display: none;
+        visibility: hidden;
+    }
+    .fleet-management-item-models-price-table .item-model-description-separator {
+        display: block;
+    }
+}
+
+/***********************************************************************/
+
+.fleet-management-extras-price-table {
+    margin-bottom: 14px;
+}
+.fleet-management-extras-price-table .price-table {
+    width: 100%;
+}
+.fleet-management-extras-price-table tr.table-labels {
+    font-size: 14px;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    color: #FFF;
+    text-align: left;
+    height: 25px;
+    text-transform: uppercase;
+}
+.fleet-management-extras-price-table th.extra-label {
+    width: 300px;
+    text-align: left;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.fleet-management-extras-price-table th.extra-price-on-duration {
+    width: 100px;
+    text-align: center;
+    font-weight: normal;
+}
+.fleet-management-extras-price-table th.extra-deposit {
+    width: 100px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.fleet-management-extras-price-table .extra-row {
+
+}
+.fleet-management-extras-price-table tr.extra-row .extra-details {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-details .extra-name {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-details .extra-description-link {
+    text-transform: uppercase;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-details hr {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: none;
+    height: 3px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-price-on-duration {
+    text-align: center;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-price-on-duration span {
+    cursor: pointer;
+}
+.fleet-management-extras-price-table tr.extra-row .extra-deposit {
+    text-align: center;
+}
+.fleet-management-extras-price-table tr td.no-extras-available {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/***********************************************************************/
+
+/***********************************************************************************/
+/************************ ITEM MODELS AVAILABILITY CALENDAR ************************/
+/***********************************************************************************/
+.fleet-management-item-models-availability-calendar {
+    width: 100%;
+}
+.fleet-management-item-models-availability-calendar {
+    margin-bottom: 14px;
+}
+.fleet-management-item-models-availability-calendar tr.table-labels {
+    font-size: 14px;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    font-weight: bold;
+    color: #FFF;
+    text-align: left;
+    height: 25px;
+    border-left: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-left: 1px solid var(--fleet-management-primary-color);
+}
+.fleet-management-item-models-availability-calendar tr.classified-table-labels {
+    font-size: 14px;
+    height: 21px;
+}
+.fleet-management-item-models-availability-calendar th.month-label {
+    width: 290px;
+    text-align: left;
+    font-weight: normal;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-availability-calendar th.classified-month-label {
+    width: 290px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: normal;
+}
+.fleet-management-item-models-availability-calendar th.item-model-price {
+    text-align: center;
+    font-weight: normal;
+}
+.fleet-management-item-models-availability-calendar th.one-day {
+    text-align: center;
+    font-weight: normal;
+    width: 23px;
+}
+.fleet-management-item-models-availability-calendar tr.table-labels th.weekend {
+    background-color: #BA0001; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-secondary-color);
+    border-left: 1px solid #BA0001; /* IE 11 Compatibility */
+    border-left: 1px solid var(--fleet-management-secondary-color);
+    border-right: 1px solid #BA0001; /* IE 11 Compatibility */
+    border-right: 1px solid var(--fleet-management-secondary-color);
+}
+.fleet-management-item-models-availability-calendar tr.classified-table-labels th.weekend {
+    background-color: #F0F0F0;
+    border-left: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+}
+.fleet-management-item-models-availability-calendar .item-model-row {
+}
+.fleet-management-item-models-availability-calendar .item-model-row:last-child {
+    border-bottom: 1px solid #DE2E2F;
+    border-bottom: 1px solid var(--fleet-management-primary-color);
+}
+.fleet-management-item-models-availability-calendar tr.class-label {
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    height: 25px;
+    text-transform: uppercase;
+    border-left: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-left: 1px solid var(--fleet-management-primary-color);
+}
+.fleet-management-item-models-availability-calendar tr.class-label td.class-name {
+    padding: 1px 1px 1px 10px;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .item-model-image {
+    width: 120px;
+    text-align: center;
+    border-left: 1px solid #DE2E2F;
+    border-left: 1px solid var(--fleet-management-primary-color);
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .item-model-image img {
+    width: 100px;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .item-model-description {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-right: 1px solid #DE2E2F;
+    border-right: 1px solid var(--fleet-management-primary-color);
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .item-model-description .item-model-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .item-model-description a:hover .item-model-name {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .item-model-description hr {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: none;
+    height: 3px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .quantity-left-in-day {
+    text-align: center;
+    border-right: 1px solid #DE2E2F;
+    border-right: 1px solid var(--fleet-management-primary-color);
+    line-height: 18px; /*special height to get partial availability closer*/
+    vertical-align: middle;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .weekend {
+    background-color: #F0F0F0;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .has-available {
+    color: #333;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .partial-available {
+    color: grey;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .all-taken {
+    color: red;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .quantity-hover {
+    min-width: 20px;
+    cursor: pointer;
+}
+.fleet-management-item-models-availability-calendar tr.item-model-row .partial-quantity-hover {
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    color: grey;
+}
+.fleet-management-item-models-availability-calendar tr td.no-item-models-in-category {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-left: 1px solid var(--fleet-management-primary-color);
+    border-right: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-right: 1px solid var(--fleet-management-primary-color);
+    border-bottom: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-bottom: 1px solid var(--fleet-management-primary-color);
+}
+@media screen and (max-width: 768px) {
+    .fleet-management-item-models-availability-calendar {
+        overflow-x: scroll;
+    }
+}
+.fleet-management-item-models-availability-calendar hr {
+    margin-top:14px;
+}
+.fleet-management-item-models-availability-calendar .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+/***********************************************************************************/
+/*************************** ITEMS AVAILABILITY CALENDAR ***************************/
+/***********************************************************************************/
+
+/* This section is reserved for future */
+
+/***********************************************************************************/
+/************************* EXTRAS AVAILABILITY CALENDAR ****************************/
+/***********************************************************************************/
+.fleet-management-extras-availability-calendar hr {
+    margin-top:14px;
+}
+.fleet-management-extras-availability-calendar .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.fleet-management-extras-availability-calendar {
+    width: 100%;
+}
+.fleet-management-extras-availability-calendar {
+    margin-bottom: 14px;
+}
+.fleet-management-extras-availability-calendar tr.table-labels {
+    font-size: 14px;
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    font-weight: bold;
+    color: #FFF;
+    text-align: left;
+    height: 25px;
+    border-left: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-left: 1px solid var(--fleet-management-primary-color);
+}
+.fleet-management-extras-availability-calendar tr.classified-table-labels {
+    font-size: 14px;
+    height: 21px;
+}
+.fleet-management-extras-availability-calendar th.month-label {
+    width: 290px;
+    text-align: left;
+    font-weight: normal;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.fleet-management-extras-availability-calendar th.classified-month-label {
+    width: 290px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: normal;
+}
+.fleet-management-extras-availability-calendar th.item-model-price {
+    text-align: center;
+    font-weight: normal;
+}
+.fleet-management-extras-availability-calendar th.one-day {
+    text-align: center;
+    font-weight: normal;
+    width: 23px;
+}
+
+.fleet-management-extras-availability-calendar tr.table-labels th.weekend {
+    background-color: #BA0001; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-secondary-color);
+    border-left: 1px solid #BA0001; /* IE 11 Compatibility */
+    border-left: 1px solid var(--fleet-management-secondary-color);
+    border-right: 1px solid #BA0001; /* IE 11 Compatibility */
+    border-right: 1px solid var(--fleet-management-secondary-color);
+}
+.fleet-management-extras-availability-calendar .extra-row {
+}
+.fleet-management-extras-availability-calendar .extra-row:last-child {
+    border-bottom: 1px solid #DE2E2F;
+    border-bottom: 1px solid var(--fleet-management-primary-color);
+}
+.fleet-management-extras-availability-calendar tr.extra-row .extra-details {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-left: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-left: 1px solid var(--fleet-management-primary-color);
+}
+.fleet-management-extras-availability-calendar tr.extra-row .extra-details .extra-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fleet-management-extras-availability-calendar tr.extra-row .extra-details hr {
+    color: #DE2E2F; /* IE 11 Compatibility */
+    color: var(--fleet-management-primary-color);
+    background-color: #DE2E2F; /* IE 11 Compatibility */
+    background-color: var(--fleet-management-primary-color);
+    border: none;
+    height: 3px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.fleet-management-extras-availability-calendar tr.extra-row .quantity-left-in-day {
+    text-align: center;
+    border-right: 1px solid #DE2E2F;
+    border-right: 1px solid var(--fleet-management-primary-color);
+    line-height: 18px; /* Special height to get partial availability closer */
+    vertical-align: middle;
+}
+.fleet-management-extras-availability-calendar tr.extra-row .weekend {
+    background-color: #F0F0F0;
+}
+.fleet-management-extras-availability-calendar tr.extra-row .has-available {
+    color: #333;
+}
+.fleet-management-extras-availability-calendar tr.extra-row .partial-available {
+    color: grey;
+}
+.fleet-management-extras-availability-calendar tr.extra-row .all-taken {
+    color: red;
+}
+.fleet-management-extras-availability-calendar tr.extra-row .quantity-hover {
+    cursor: pointer;
+}
+.fleet-management-extras-availability-calendar tr.extra-row .partial-quantity-hover {
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    color: grey;
+}
+.fleet-management-extras-availability-calendar tr td.no-extras {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-left: 1px solid var(--fleet-management-primary-color);
+    border-right: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-right: 1px solid var(--fleet-management-primary-color);
+    border-bottom: 1px solid #DE2E2F; /* IE 11 Compatibility */
+    border-bottom: 1px solid var(--fleet-management-primary-color);
+}
+/******************************************************************/
+/******************** RIGHT TO LEFT CLASSES ***********************/
+/******************************************************************/
+.rtl .fleet-management-wrapper {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+.rtl .fleet-management-search-step1 .search-field .search-field-header .search-field-title {
+    margin-right: 95px;
+    margin-left: 0;
+    text-align: right;
+}
+.rtl .fleet-management-item-model-input-search-form .search-field .search-field-header {
+    background: transparent url("../../../Images/SearchHeaderRTL.png") no-repeat left top;
+}
+.rtl .fleet-management-item-model-input-search-form .search-field .search-field-header-with-title {
+    background: transparent url("../../../Images/SearchHeaderRTL.png") no-repeat left top;
+}
+.rtl .fleet-management-search-step1 .search-field .search-field-body div.styled-select-dropdown select {
+    padding-left: 0;
+    padding-right: 4px;
+}
+.rtl .fleet-management-search-step1 .search-field .search-field-body input[type="submit"] {
+    margin-left: 0;
+    margin-right: 80px;
+}
+.rtl .fleet-management-search-step1 div.styled-select-dropdown {
+    background: #FFF url("../../../Images/DropdownIconRTL.png") no-repeat scroll left center;
+}

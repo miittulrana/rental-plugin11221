@@ -1,0 +1,6 @@
+<svg id="clock-circular-outline" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="Group_9" data-name="Group 9">
+    <path id="Path_50" data-name="Path 50" d="M7,0a7,7,0,1,0,7,7A7.008,7.008,0,0,0,7,0ZM7,12.47A5.47,5.47,0,1,1,12.47,7,5.476,5.476,0,0,1,7,12.47Z" fill="#de2d2e"/>
+    <path id="Path_51" data-name="Path 51" d="M257.975,142.782v-2.934a.593.593,0,1,0-1.186,0v3.123c0,.009,0,.018,0,.027a.59.59,0,0,0,.171.448l2.209,2.208a.593.593,0,0,0,.839-.839Z" transform="translate(-250.369 -135.773)" fill="#de2d2e"/>
+  </g>
+</svg>

@@ -1,0 +1,170 @@
+This plugin is comprised of three parts.
+
+(1) The code of seven PHP classes in /Controllers/ folder, and the code of seventeen PHP classes in /Models/ folder,
+that are so-called "derivative work of WordPress" are licensed under the MASSACHUSETTS INSTITUTE OF TECHNOLOGY LICENSE (MIT LICENSE).
+Exact PHP classes, that are MIT-licensed are listed in a separate sections of this document.
+You will find a copy of the MIT in the same directory as this text file.
+
+(2) All other code of PHP files, that are located in /Models/, /Views/ and /Controllers/ folders are licensed under the GNU AFFERO GENERAL PUBLIC LICENSE (AGPL).
+You will find a copy of the AGPL in the same directory as this text file.
+
+(3) All other parts, but not limited to the Unicode CLDR language files, CSS code, images, design,
+so-called "SQL data" (with *.php extension) in /UI/SQLs folder,
+so-called "HTML templates" (with *.php extension) in /UI/Templates folder,
+3rd party libraries in /Libraries/ sub-folders, that consists from PHP, CERT and other files,
+Transpilers of 3rd party libraries to S.O.L.I.D. MVC micro-framework, and located in /Libraries/ folder,
+are licensed according to the license purchased from Envato.
+
+Read more about licensing here: http://codecanyon.net/licenses
+
+---------------------------------------------------------------------------------
+
+General clearance on parts that are not invented by WordPress or is not "unique to WordPress":
+
+1. Data validation, file uploading, data sanitization, output escaping, output buffering.
+
+2. HTML5 META headers (i.e. meta header or meta description, meta keywords).
+
+3. HTML5 accessibility parameters for disabled people
+( https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML )
+
+4. React (MIT), jQuery (MIT) and it's libraries.
+
+5. Ajax
+( https://www.w3schools.com/xml/ajax_intro.asp )
+
+6. REST API (i.e. usage of POST, PUT, GET, DELETE, PATCH, HEAD and other commands).
+
+So all above features in PHP and web engineering world can be freely used by anyone without any restrictions. While i.e. the the Ajax media uploader UI and uploading procedure, if WordPress media script are used, are unique to WordPress. For that reason S.O.L.I.D. MVC uses only basic file uploading feature by PHP and recommends for all plugin developers on SolidMVC to use the general file uploading procedure and use WordPress scripts only for i.e. image thumbnail generation and just upload these files to /wp-content/uploads/ folder.
+This way you will not loose the licensing flexibility.
+
+For example - the RESTful API was developed by Roy Fielding in his 2000 PhD dissertation "Architectural Styles and the Design of Network-based Software Architectures" at UC Irvine. He developed the REST architectural style in parallel with HTTP 1.1 of 1996–1999, based on the existing design of HTTP 1.0 of 1996.
+
+---------------------------------------------------------------------------------
+
+General clearance on parts that are "non-derivative work of WordPress" in S.O.L.I.D. MVC micro-framework:
+
+1.  All variables on so-called "HTML templates" (with .php extension in ``/UI/Templates/` folder)
+    are bound only via SolidMVC controller files, and are NOT derived from WordPress.
+1.1.    Additionally, S.O.L.I.D. MVC support escaping functions abbreviations - `es(..)`, `at(..)`, `abh(..)`, `eh()`, `ej()`, `et()`
+        for possible use in templates instead of long-named function.
+
+2.  All UI SQL install and demo data in so called "SQL data" files (with .php extension in `UI/SQLs/` folder)
+    and explicitly loaded only via SolidMVC install & import controllers, and are NOT derived from WordPress.
+
+3.  All UI assets (CSS, JS, Images), that are in `/UI/Assets/` folder are NOT derived from WordPress.
+
+4.  Plugin demo gallery images, that are in `/UI/DemoGallery/` folder are NOT derived from WordPress.
+
+5.  The `/Libraries/` transpiler classes and files in sub-folders of `/Libraries/` folders ARE NOT under plugin's global namespace,
+    and are loaded INDEPENDENTLY and INDIVIDUALLY by exact models, controllers, or library transpilers, and is NOT derived from WordPress.
+
+6.  The Unicode CLDR ("KEY=>VALUE" pairs) language files (with .php extension, in `/Languages/` folder) and language file loading mechanism
+    are unique to SolidMVC micro-framework, is based on "Unicode CLDR" language file definition, and are NOT derived from WordPress.
+
+7.  The view classes (in `/Views/` folder) and template loading are unique mechanism to SolidMVC micro-framework,
+    is based on MVC development paradigm, are NOT derived from WordPress.
+
+---------------------------------------------------------------------------------
+
+General clearance on parts that ARE or MIGHT BE "derivative work of WordPress" in S.O.L.I.D. MVC micro-framework:
+
+1. With default SolidMVC setup, the following seven "WP core-hooking" controllers (PHP classes)
+are so-called "derivative work of WordPress", and are always MIT-licensed:
+
+    1) /Controllers/MainController.php:                MainController {...}
+    2) /Controllers/Admin/AssetController.php:         AssetController {...}
+    3) /Controllers/Admin/InstallController.php        InstallController {...}
+    4) /Controllers/Admin/NetworkMenuController.php:   NetworkMenuController {...}
+    5) /Controllers/Admin/SingleMenuController.php:    SingleMenuController {...}
+    6) /Controllers/Front/AssetController.php:         AssetController {...}
+    7) /Controllers/Front/ShortcodeController.php:     ShortcodeController {...}
+
+2. With default SolidMVC setup, the following seven "tight-coupled with WP core" models (PHP classes)
+are so-called "derivative work of WordPress", and are always MIT-licensed:
+
+    1) /Models/Administrator/Administrator.php:             Administrator {...} - due to fact, that 'administrator' is WordPress core role.
+
+    2) /Models/Administrator/AdministratorRole.php:         AdministratorRole {...} - due to fact, that 'administrator' is WordPress core role.
+
+    3) /Models/Administrator/AdministratorsObserver.php:    AdministratorsObserver {...} - due to fact, that 'administrator' is WordPress core role.
+
+    4) /Models/Configuration/Configuration.php:             Configuration {...} - due to facts, that is based on checking WordPress core paths 'wp-content/uploads', 'wp-content/plugins/', etc.
+                                                                                  as well as 'is_plugin_active_for_network(..)', 'plugin_basename(..)', 'WP_LANG_DIR',
+                                                                                  and checks in WordPress core database table ('wp_options')
+
+    5) /Models/File/StaticFile.php:                         StaticFile {...} - this is just an additional file uploading class with methods,
+                                                                               that are actively based on WordPress uploading functions.
+
+    6) /Models/Formatting/StaticFormatting.php:             StaticFormatting {...} - this is just an additional formatting class with methods,
+                                                                                     that are actively based on WordPress formatting functions.
+
+    7) /Models/Import/Demo.php:                             Demo {...} - due to fact, that the main file feature is reading files meta data
+                                                                         with WP-core's 'get_file_data(..)' function, as well as some variations of SolidMVC
+                                                                         (mostly - extension-based) has support for demo data import to WP-core database tables as well (i.e. 'wp_posts').
+
+    8) /Models/Import/DemosObserver.php:                    DemosObserver {...} - due to fact, that the main file feature is reading files meta data
+                                                                                  with WP-core's unique 'get_file_data(..)' function.
+
+    9) /Models/Install/Install.php:                         Install {...} - due to existing support for data insertion to WP-core database tables as well (i.e. 'wp_posts').
+
+    10) /Models/Language/Language.php:                      Language {...} - based on checking of WP languages path and checks needed for WPML support with 'unique to WP' functions:
+                                                                             'is_plugin_active(..)', 'do_action(..)', 'get_permalink(..)' and 'apply_filters()'.
+
+    11) /Models/Load/AutoLoad.php:                          AutoLoad {...} - based on checking of WP plugins folder path.
+
+    12) /Models/Routing/UI_Routing.php:                     UI_Routing {...} - due to facts, that is based on checking WordPress current and child theme paths and URLs
+                                                                               with WordPress core functions, that are unique to WordPress:
+                                                                               'get_stylesheet_directory()', 'get_template_directory()',
+                                                                               'get_stylesheet_directory_uri()' and 'get_template_directory_uri()'.
+
+    13) /Models/Status/NetworkStatus.php:                   NetworkStatus {...} - due to fact, that is actively based on unique to WordPress 'network_admin_url(..) function.
+
+    14) /Models/Status/SingleStatus.php:                    SingleStatus {...} - due to fact, that is actively based on unique to WordPress 'admin_url(..) function.
+
+    15) /Models/Style/Style.php:                            Style {...} - due to fact, that the main class functionality is based on three 'unique to WordPress' functions:
+                                                                          'get_file_data(..)', 'wp_get_theme(..)' and 'get_template()'.
+
+    16) /Models/Style/StylesObserver.php:                   StylesObserver {...} - due to fact, that the main class functionality is based on WP-unique 'get_file_data(..)' function.
+
+    17) /Models/Validation/StaticValidator.php:             StaticValidator {...} - this is just an additional validation class with methods,
+                                                                                    that are actively based on WordPress validation functions.
+-----------------------------------------------------------------------------------------------
+
+General clearance on why does SolidMVC does not have it's implementation for WordPress widget class:
+
+Differently to shortcodes, or API hooks, the widgets in WordPress can be created only by using the 'extend' class feature.
+First of all this limits the plugin's ability to register dynamic widget names, as each of them has to have an 'extending class',
+and secondly, 'extending' is what is so-called 'derivative work' regarding the GPL license, which WordPress uses.
+So to avoid this collision, we do not support 'Widgets' in SolidMVC.
+Additional there is a plan in WordPress community to transform all Widgets to Gutenberg blocks, and as you may know,
+Gutenberg is written on React.js, which is MIT open-sourced. While the Gutenberg, that is pretty-much 'an extend' to React.js,
+is based on GPL-license, so unless your plugin would be extending one of Gutenberg's core functions
+(what would be so-called GPL-licensed 'derivative work'), you are not tightly coupled with GPL, and pretty much fully on React, which is MIT open-sourced.
+
+Of course, nobody restricts you from implementing usage of these Widgets and using them in your plugin and themes, but then you will loose your licensing flexibility.
+
+-----------------------------------------------------------------------------------------------
+
+General clearance on why does plugins, running SolidMVC should not register it's own unique filters and unique hooks:
+
+Action and filter hooks are called to be one of descriptive attributes on how the WordPress itself is built, so the plugins written
+on SolidMVC micro-framework, should avoid registering their own unique filters and hooks for other plugins and themes to hook in to them.
+SolidMVC, differently to WordPress, does use 'template, asset & SQL overriding' feature, that does not depend on WordPress filters and hooks.
+Only the SolidMVC core's initializer controllers calls WordPress core action and filter hooks.
+This grants the fact, that any plugin, that is written on SolidMVC micro-framework, does not use WordPress filters and hooks system at all.
+
+Of course, nobody restricts you from creating and using these unique hooks, but then you will loose your licensing flexibility.
+
+-----------------------------------------------------------------------------------------------
+
+Rules of good faith for models, views and controllers:
+
+1.  Despite that WE CAN license other models and model classes on any license WE want, because some models still has to be GPL-compliant,
+    we have all our models licensed under GPL-compliant licenses - MIT and AGPL, respectively.
+
+2.  Despite that WE CAN license all views and view classes on any license WE want, it is advised that you keep your own views licensed
+    we have all our models licensed under GPL-compliant licenses - MIT and AGPL, respectively.
+
+3.  Despite that WE CAN license other controllers on any license WE want, because some controllers still has to be GPL-compliant,
+    we have all our models licensed under GPL-compliant licenses - MIT and AGPL, respectively.
